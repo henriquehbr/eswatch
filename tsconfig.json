@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "outDir": "build",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "baseUrl": "./src"
+  },
+  "compileOnSave": true,
+  "include": ["./src"]
+}

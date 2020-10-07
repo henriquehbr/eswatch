@@ -1,0 +1,70 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  // Enables both browser and node global variables (eg: document, __dirname)
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["import", "@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "semi": ["warn", "never"],
+    "quotes": ["warn", "single"],
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "eol-last": "warn",
+    "no-case-declarations": "off",
+    "no-new-object": "warn",
+    "object-shorthand": "warn",
+    "quote-props": ["warn", "as-needed"],
+    "no-array-constructor": "warn",
+    "prefer-template": "warn",
+    "template-curly-spacing": "warn",
+    "no-eval": "error",
+    "no-useless-escape": "warn",
+    "space-before-blocks": "warn",
+    "prefer-arrow-callback": "warn",
+    "arrow-spacing": "warn",
+    "arrow-parens": ["warn", "as-needed"],
+    "no-confusing-arrow": "warn",
+    "no-dupe-class-members": "warn",
+    "no-duplicate-imports": "warn",
+    "dot-notation": "warn",
+    "no-restricted-properties": "warn",
+    "no-multi-assign": "warn",
+    "operator-linebreak": "warn",
+    "max-len": ["warn", { "code": 120 }],
+    // ===== Import =====
+    "import/first": "warn",
+    "import/no-webpack-loader-syntax": "warn",
+    "import/order": [
+      "warn",
+      {
+        "groups": ["builtin", "external", "internal", "sibling", "index"]
+      }
+    ],
+    "no-constant-condition": "off",
+    "no-async-promise-executor": "off",
+    "require-atomic-updates": "off",
+    // ===== TypeScript =====
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/member-delimiter-style": [
+      "warn",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": true
+        }
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/camelcase": "off"
+  }
+}
