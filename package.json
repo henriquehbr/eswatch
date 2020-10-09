@@ -5,6 +5,10 @@
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "lib"
+  ],
+  "bin": "./lib/index.js",
   "repository": {
 		"type": "git",
 		"url": "https://github.com/henriquehbr/eswatch"
