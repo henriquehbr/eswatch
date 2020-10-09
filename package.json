@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-watch",
+  "name": "eswatch",
   "version": "0.1.0",
   "main": "lib/index.js",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/henriquehbr/esbuild-watch"
+		"url": "https://github.com/henriquehbr/eswatch"
 	},
   "scripts": {
     "build": "esbuild --outdir=lib src/index.ts",

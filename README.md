@@ -1,4 +1,4 @@
-# esbuild-watch
+# eswatch
 
 A watcher utility for esbuild
 
