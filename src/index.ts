@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readline from 'readline'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
