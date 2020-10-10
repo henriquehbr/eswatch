@@ -659,10 +659,10 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eswatch@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.1.2.tgz#42594370b973db2a36536cc074d9cb900cafbeca"
-  integrity sha512-WYaiQQGTtAS3COPKK0atOR2yCUoEZI6XmmlaqI1CFlKTozAldldaKJKXD9dfamV0NwmmYPOUI1Iifr7cZXi+ZQ==
+eswatch@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.2.0.tgz#7fc229069ac36e8756d8b4e7fcf6edd891e0c5e6"
+  integrity sha512-CJ6rRu/ZVoFRhslzy5xCgF0fDzUbe++41MujexZZNEzNp5gR2w3awO6abHuSgOIhZlUI6cVzVXLAZtA8SRSgTw==
   dependencies:
     chokidar "^3.4.2"
     esbuild "^0.7.13"

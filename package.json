@@ -14,8 +14,7 @@
     "url": "https://github.com/henriquehbr/eswatch"
   },
   "scripts": {
-    "build": "esbuild --outdir=lib src/index.ts",
-    "watch": "node lib --outdir ./lib --watch ./src/**/* --entry ./src/index.ts",
+    "watch": "eswatch --outdir ./lib --watch ./src/**/* --entry ./src/index.ts",
     "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
   },
   "husky": {
@@ -33,7 +32,7 @@
     "@typescript-eslint/parser": "^3.8.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.22.0",
-    "eswatch": "^0.1.2",
+    "eswatch": "^0.2.0",
     "husky": "^4.2.5",
     "typescript": "^3.9.7"
   },
