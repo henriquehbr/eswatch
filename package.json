@@ -1,6 +1,6 @@
 {
   "name": "eswatch",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
