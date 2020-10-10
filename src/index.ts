@@ -7,10 +7,14 @@ import minimist from 'minimist'
 import esbuild from 'esbuild'
 import chokidar from 'chokidar'
 
+// Create --exec flag just like nodemon
+
 interface LiveReloadOptions {
   watch: string | readonly string[]
   clear: boolean
   entry: string
+  outdir: string
+  run: boolean
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -24,7 +28,9 @@ const rl = readline.createInterface({
 })
 
 const watchAndBuild = async (options: LiveReloadOptions) => {
-  const outdir = path.join(__dirname, 'build')
+  // This is set to the built library inside node_modules
+  const outdir = options.outdir || path.join(__dirname, 'build')
+  console.log('outdir is set to:', outdir)
   child && child.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
@@ -34,12 +40,16 @@ const watchAndBuild = async (options: LiveReloadOptions) => {
     outdir
   })
   return new Promise<void>(resolve => {
-    rl.pause()
-    child = fork(outdir, { stdio: 'inherit' })
-    child.on('close', () => {
-      rl.resume()
+    if (options.run) {
+      rl.pause()
+      child = fork(outdir, { stdio: 'inherit' })
+      child.on('close', () => {
+        rl.resume()
+        resolve()
+      })
+    } else {
       resolve()
-    })
+    }
   })
 }
 

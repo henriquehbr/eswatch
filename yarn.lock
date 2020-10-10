@@ -659,6 +659,16 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
+eswatch@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.1.2.tgz#42594370b973db2a36536cc074d9cb900cafbeca"
+  integrity sha512-WYaiQQGTtAS3COPKK0atOR2yCUoEZI6XmmlaqI1CFlKTozAldldaKJKXD9dfamV0NwmmYPOUI1Iifr7cZXi+ZQ==
+  dependencies:
+    chokidar "^3.4.2"
+    esbuild "^0.7.13"
+    inquirer "^7.3.3"
+    minimist "^1.2.5"
+
 external-editor@^3.0.3:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
