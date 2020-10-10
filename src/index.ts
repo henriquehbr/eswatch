@@ -7,8 +7,6 @@ import minimist from 'minimist'
 import esbuild from 'esbuild'
 import chokidar from 'chokidar'
 
-// Create --exec flag just like nodemon
-
 interface LiveReloadOptions {
   watch: string | readonly string[]
   clear: boolean
@@ -30,7 +28,6 @@ const rl = readline.createInterface({
 const watchAndBuild = async (options: LiveReloadOptions) => {
   // This is set to the built library inside node_modules
   const outdir = options.outdir || path.join(__dirname, 'build')
-  console.log('outdir is set to:', outdir)
   child && child.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
