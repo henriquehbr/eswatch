@@ -14,7 +14,7 @@
     "url": "https://github.com/henriquehbr/eswatch"
   },
   "scripts": {
-    "watch": "eswatch --outdir ./lib --watch ./src/**/* --entry ./src/index.ts",
+    "dev": "node lib --outdir ./lib --watch ./src/**/* --entry ./src/index.ts --run \"node lib --clear --run --watch ./example/**/* --entry ./example/index.ts\"",
     "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
   },
   "husky": {
