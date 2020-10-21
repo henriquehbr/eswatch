@@ -3,9 +3,9 @@ import readline from 'readline'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { ChildProcess, spawn } from 'child_process'
+import { existsSync } from 'fs'
 import minimist from 'minimist'
 import esbuild from 'esbuild'
-import { existsSync } from 'fs'
 
 interface LiveReloadOptions {
   watch: string | readonly string[]

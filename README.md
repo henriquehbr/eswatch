@@ -8,7 +8,7 @@ A watcher utility for esbuild
 
 ```
 Usage:
-  eswatch [options]
+  eswatch [options] [entry points]
 
 Options:
   --watch   Directory/files to watch (supports glob patterns)
