@@ -11,9 +11,13 @@ Usage:
   eswatch [options] [entry points]
 
 Options:
-  --watch   Directory/files to watch (supports glob patterns)
-  --clear   Clear screen on each reload
-  --entry   Entry point for the build
-  --outdir  The output directory (for multiple entry points)
-  --run     Execute the output script right after each build
+  --bundle      Bundle all dependencies into the output files
+  --external    Exclude specific modules from the bundle
+  --format      Output format
+  --splitting   Enable code splitting
+  --watch       Directory/files to watch (supports glob patterns)
+  --clear       Clear screen on each reload
+  --entry       Entry point for the build
+  --outdir      The output directory (for multiple entry points)
+  --run         Execute the output script right after each build
 ```
