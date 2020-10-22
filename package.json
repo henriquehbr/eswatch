@@ -1,6 +1,6 @@
 {
   "name": "eswatch",
-  "version": "0.4.1",
+  "version": "0.5.1",
   "main": "lib/index.js",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
@@ -14,31 +14,32 @@
     "url": "https://github.com/henriquehbr/eswatch"
   },
   "scripts": {
-    "dev": "eswatch --clear --outdir ./lib --watch ./src/**/* --entry ./src/index.ts --run \"node lib --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
+    "dev": "eswatch --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
     "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
+      "pre-commit": "yarn lint && git add .",
       "pre-push": "yarn lint"
     }
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.0",
+    "@types/eslint": "^7.2.4",
     "@types/inquirer": "^7.3.1",
     "@types/minimist": "^1.2.0",
-    "@types/node": "^14.0.27",
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
-    "@typescript-eslint/parser": "^3.8.0",
-    "eslint": "^7.6.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eswatch": "^0.3.0",
-    "husky": "^4.2.5",
-    "typescript": "^3.9.7"
+    "@types/node": "^14.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eswatch": "^0.5.1",
+    "husky": "^4.3.0",
+    "typescript": "^4.0.3"
   },
   "dependencies": {
-    "chokidar": "^3.4.2",
-    "esbuild": "^0.7.13",
+    "chokidar": "^3.4.3",
+    "esbuild": "^0.7.19",
+    "find-up": "^5.0.0",
     "inquirer": "^7.3.3",
     "minimist": "^1.2.5"
   }
