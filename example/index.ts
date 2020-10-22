@@ -1,4 +1,7 @@
 import inquirer from 'inquirer'
+import { message } from './message'
+
+message()
 
 inquirer
   .prompt([

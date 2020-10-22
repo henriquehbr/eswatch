@@ -2,8 +2,10 @@ import path from 'path'
 import readline from 'readline'
 import { fileURLToPath } from 'url'
 import { ChildProcess, spawn } from 'child_process'
+import { builtinModules } from 'module'
 import esbuild from 'esbuild'
-import type { CLIFlags } from 'types'
+import type { CLIFlags } from './types'
+import { getDependencies } from './getDependencies'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -21,10 +23,18 @@ export const watchAndBuild: WatchAndBuild = async options => {
   const entryPoints = options.entry ? [options.entry] : options._
   // This is set to the built library inside node_modules
   const outdir = options.outdir || path.join(__dirname, 'build')
+  const dependencies = await getDependencies()
   child && child.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
-  await service.build({ entryPoints, outdir })
+  await service.build({
+    bundle: options.bundle,
+    external: [...dependencies, ...builtinModules],
+    format: options.format,
+    splitting: options.splitting,
+    entryPoints,
+    outdir
+  })
   return new Promise(resolve => {
     if (options.run) {
       rl.pause()
