@@ -1,8 +1,8 @@
 import path from 'path'
 import readline from 'readline'
-import esbuild from 'esbuild'
 import { fileURLToPath } from 'url'
 import { ChildProcess, spawn } from 'child_process'
+import esbuild from 'esbuild'
 import type { CLIFlags } from 'types'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))

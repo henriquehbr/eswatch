@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import type { CLIFlags } from './types'
 import minimist from 'minimist'
+import type { CLIFlags } from './types'
 import { validateEntryPoints } from './validateEntryPoints'
 import { watchAndBuild } from './watchAndBuild'
 
