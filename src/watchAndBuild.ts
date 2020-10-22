@@ -29,7 +29,7 @@ export const watchAndBuild: WatchAndBuild = async options => {
   options.clear && console.clear()
   await service.build({
     bundle: options.bundle,
-    external: [...dependencies, ...builtinModules],
+    ...(options.bundle && { external: [...dependencies, ...builtinModules] }),
     format: options.format,
     splitting: options.splitting,
     entryPoints,
