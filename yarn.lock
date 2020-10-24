@@ -344,21 +344,6 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
-chokidar@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.2.tgz#38dc8e658dec3809741eb3ef7bb0a47fe424232d"
-  integrity sha512-IZHaDeBeI+sZJRX7lGcXsdzgvZqKv6sECqsbErJA4mHWfpRrD8B97kSFN4cQz6nGBGiuFia1MKR4d6c1o8Cv7A==
-  dependencies:
-    anymatch "~3.1.1"
-    braces "~3.0.2"
-    glob-parent "~5.1.0"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.4.0"
-  optionalDependencies:
-    fsevents "~2.1.2"
-
 chokidar@^3.4.3:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.3.tgz#c1df38231448e45ca4ac588e6c79573ba6a57d5b"
@@ -566,11 +551,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.7.13:
-  version "0.7.13"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.7.13.tgz#ca614002e70814d548dd3243eb3ccc5d93833112"
-  integrity sha512-IHBqE0blYhBw3fSgaQOHI1hdxq5OJgzdU/Tg0FPIZyag6eHCB5I8wirz1Oyse7W+TwCcFeCxMNLhdyjzdFACcw==
-
 esbuild@^0.7.19:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.7.19.tgz#6f8b94445e06f8bf6125183a877de6046c965abc"
@@ -727,13 +707,13 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eswatch@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.5.1.tgz#7b5a08df40419ba938bbca972820bd6ed023db91"
-  integrity sha512-hWOPfe+L+qOArGq4tRRSkH7JpJKlF91gVHb6ynaKhQXBK06P5vxRUVI9DNneauUt7ewUVkTSUc2pYEoBJ+zoEQ==
+eswatch@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.6.0.tgz#9aa88a1daa6f220a0bbfd6bb2c4aafa0cfc546e2"
+  integrity sha512-eVJ+6qnmTHVmzcSkLPYX3Vt04Ra0Bla0K6o7ilqtZm/7zkG2QQfrksPHi6LXOTG4xh68lw2hNBkHsLr9dAbqVA==
   dependencies:
-    chokidar "^3.4.2"
-    esbuild "^0.7.13"
+    chokidar "^3.4.3"
+    esbuild "^0.7.19"
     find-up "^5.0.0"
     inquirer "^7.3.3"
     minimist "^1.2.5"
@@ -1495,13 +1475,6 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
-
-readdirp@~3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.4.0.tgz#9fdccdf9e9155805449221ac645e8303ab5b9ada"
-  integrity sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==
-  dependencies:
-    picomatch "^2.2.1"
 
 readdirp@~3.5.0:
   version "3.5.0"
