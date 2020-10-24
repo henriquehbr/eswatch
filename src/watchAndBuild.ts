@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url'
 import { ChildProcess, spawn } from 'child_process'
 import { builtinModules } from 'module'
 import esbuild from 'esbuild'
-import type { CLIFlags } from './types'
 import { getDependencies } from './getDependencies'
+import type { WatchAndBuild } from './types'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -15,8 +15,6 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 })
-
-export type WatchAndBuild = (options: CLIFlags) => Promise<void>
 
 export const watchAndBuild: WatchAndBuild = async options => {
   // TODO: remove `options.entry` on 1.0
@@ -32,6 +30,7 @@ export const watchAndBuild: WatchAndBuild = async options => {
     ...(options.bundle && { external: [...dependencies, ...builtinModules] }),
     format: options.format,
     splitting: options.splitting,
+    minify: options.minify,
     entryPoints,
     outdir
   })

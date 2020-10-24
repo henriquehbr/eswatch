@@ -12,6 +12,7 @@ Usage:
 
 Options:
   --bundle      Bundle all dependencies into the output files
+  --minify      Remove whitespace, shorten indentifiers and syntax
   --external    Exclude specific modules from the bundle
   --format      Output format
   --splitting   Enable code splitting

@@ -14,7 +14,7 @@
     "url": "https://github.com/henriquehbr/eswatch"
   },
   "scripts": {
-    "dev": "eswatch --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
+    "dev": "eswatch --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --minify --bundle --format esm --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
     "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
   },
   "husky": {
