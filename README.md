@@ -10,15 +10,17 @@ A watcher utility for esbuild
 Usage:
   eswatch [options] [entry points]
 
-Options:
+eswatch options:
+  --entry       Entry point for the build
+  --watch       Directory/files to watch (supports glob patterns)
+  --clear       Clear screen on each reload
+  --run         Execute the output script right after each build
+
+esbuild options:
   --bundle      Bundle all dependencies into the output files
   --minify      Remove whitespace, shorten indentifiers and syntax
   --external    Exclude specific modules from the bundle
   --format      Output format
   --splitting   Enable code splitting
-  --watch       Directory/files to watch (supports glob patterns)
-  --clear       Clear screen on each reload
-  --entry       Entry point for the build
   --outdir      The output directory (for multiple entry points)
-  --run         Execute the output script right after each build
 ```
