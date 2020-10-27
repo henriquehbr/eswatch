@@ -9,11 +9,13 @@ export interface ESWatchFlags {
   clear?: boolean
   entry: string
   run?: boolean
+  standalone?: boolean
 }
 
 export interface ESBuildFlags {
   bundle?: boolean
   external?: string[]
+  platform?: 'browser' | 'node'
   format?: 'cjs' | 'esm' | 'iife'
   splitting: boolean
   outdir?: string

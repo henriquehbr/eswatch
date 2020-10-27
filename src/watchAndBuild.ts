@@ -4,7 +4,6 @@ import { fileURLToPath } from 'url'
 import { ChildProcess, spawn } from 'child_process'
 import { builtinModules } from 'module'
 import esbuild from 'esbuild'
-import { getDependencies } from './getDependencies'
 import type { WatchAndBuild } from './types'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -19,17 +18,22 @@ const rl = readline.createInterface({
 export const watchAndBuild: WatchAndBuild = async options => {
   // TODO: remove `options.entry` on 1.0
   const entryPoints = options.entry ? [options.entry] : options._
+  const splitting = options.format === 'esm' ? options.splitting : false
   // This is set to the built library inside node_modules
   const outdir = options.outdir || path.join(__dirname, 'build')
-  const dependencies = await getDependencies()
+  const external = [...builtinModules]
+  if (!options.standalone) {
+    const { getDependencies } = await import('./getDependencies')
+    external.push(...await getDependencies())
+  }
   child && child.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
   await service.build({
     bundle: options.bundle,
-    ...(options.bundle && { external: [...dependencies, ...builtinModules] }),
+    platform: options.platform,
+    ...(options.bundle && { external, splitting }),
     format: options.format,
-    splitting: options.splitting,
     minify: options.minify,
     entryPoints,
     outdir

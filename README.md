@@ -13,11 +13,13 @@ Usage:
 eswatch options:
   --entry       Entry point for the build
   --watch       Directory/files to watch (supports glob patterns)
+  --standalone  Include dependencies on bundle
   --clear       Clear screen on each reload
   --run         Execute the output script right after each build
 
 esbuild options:
   --bundle      Bundle all dependencies into the output files
+  --platform    Platform target
   --minify      Remove whitespace, shorten indentifiers and syntax
   --external    Exclude specific modules from the bundle
   --format      Output format

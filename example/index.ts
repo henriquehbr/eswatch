@@ -1,16 +1,17 @@
 import inquirer from 'inquirer'
-import { message } from './message'
 
-message()
-
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'username',
-      default: 'World'
-    }
-  ])
-  .then(answers => {
-    console.log(`Hello ${answers.username}!`)
-  })
+(async () => {
+  const { message } = await import('./message')
+  message()
+  inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'username',
+        default: 'World'
+      }
+    ])
+    .then(async answers => {
+      console.log(`Hello ${answers.username}!`)
+    })
+})()
