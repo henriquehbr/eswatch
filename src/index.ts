@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import minimist from 'minimist'
 import type { CLIFlags } from './types'
 import { validateEntryPoints } from './validateEntryPoints'
@@ -8,12 +7,9 @@ const options = minimist<CLIFlags>(process.argv.slice(2))
 
 validateEntryPoints(options)
 
-options.watch
-  ? import('chokidar')
-    .then(({ default: chokidar }) =>
-      chokidar
-        .watch(options.watch)
-        .on('ready', async () => watchAndBuild(options))
-        .on('change', async () => watchAndBuild(options))
-    )
-  : watchAndBuild(options)
+options.watch ?
+  import('chokidar').then(({ 'default': chokidar }) => chokidar
+    .watch(options.watch)
+    .on('ready', async() => watchAndBuild(options))
+    .on('change', async() => watchAndBuild(options))) :
+  watchAndBuild(options)
