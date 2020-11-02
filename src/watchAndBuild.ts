@@ -51,15 +51,11 @@ export const watchAndBuild: WatchAndBuild = async options => {
       child = spawn(commandName, commandParameters, { stdio: 'inherit' })
       child.on('close', () => {
         rl.resume()
-        resolve()
+        options.watch ? resolve() : process.exit()
       })
     } else {
-      /*
-       * Create (or reuse) a validator for `options.watch`
-       * Include duration in ms of the build process
-       */
       console.log(`${options.entry || options._[0]} built successfully on ${options.outdir}`)
-      process.exit()
+      resolve()
     }
   })
 }
