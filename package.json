@@ -30,7 +30,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "yarn changelog -u && yarn amend-changelog && git push"
+      "post-commit": "yarn changelog -u && yarn amend-changelog"
     }
   },
   "devDependencies": {

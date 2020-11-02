@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 - chore: implement automated changelog generation [`48c0b6c`](https://github.com/henriquehbr/esbuild-watch/commit/48c0b6c272e5efbf6c28e3b54efd77d7c64d8570)
 - fix: build and exit when without --watch flag [`7ea4f81`](https://github.com/henriquehbr/esbuild-watch/commit/7ea4f816cb139cbf2d49075603e77f7d3a3c5689)
-- chore: change error message for inexistent entry points [`f5f1f3d`](https://github.com/henriquehbr/esbuild-watch/commit/f5f1f3d9192239f797001b50c058ef9d8b739021)
+- chore: change error message for inexistent entry points [`f7c7dac`](https://github.com/henriquehbr/esbuild-watch/commit/f7c7daca043ef7279d97bc6eb3b11d2ba7b40f2e)
+- chore: remove "git push" from "post-commit" hook [`5e7d461`](https://github.com/henriquehbr/esbuild-watch/commit/5e7d46109cc5af93eb90d626b5017399d2ba4cc6)
 
 #### [v0.7.1](https://github.com/henriquehbr/esbuild-watch/compare/v0.7.0...v0.7.1)
 
