@@ -30,7 +30,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && git add .",
       "post-commit": "yarn changelog -u && yarn amend-changelog && git push"
     }
   },
