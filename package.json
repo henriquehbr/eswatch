@@ -17,13 +17,21 @@
     "node": ">=9.3.0"
   },
   "scripts": {
+    "bump:patch": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --patch",
+    "bump:minor": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --minor",
+    "bump:major": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --major",
+    "version": "yarn changelog -p",
+    "postversion": "yes \"\" | yarn publish",
+    "changelog": "auto-changelog -l false --hide-credit",
+    "postchangelog": "git add CHANGELOG.md",
+    "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
     "dev": "eswatch --minify --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
     "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
   },
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint && git add .",
-      "pre-push": "yarn lint"
+      "post-commit": "yarn changelog -u && yarn amend-changelog && git push"
     }
   },
   "devDependencies": {
@@ -33,6 +41,8 @@
     "@types/node": "^14.14.6",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
+    "auto-changelog": "^2.2.1",
+    "cross-env": "^7.0.2",
     "eslint": "^7.12.1",
     "eslint-config-hbr": "^1.0.0-beta.4",
     "eslint-plugin-import": "^2.22.1",
