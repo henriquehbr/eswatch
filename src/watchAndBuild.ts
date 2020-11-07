@@ -43,6 +43,7 @@ const watchAndBuild: WatchAndBuild = async options => {
       splitting
     })
   })
+  service.stop()
   return new Promise(resolve => {
     if (options.run) {
       rl.pause()
@@ -58,6 +59,7 @@ const watchAndBuild: WatchAndBuild = async options => {
       console.log(
         `${options.entry || options._.join(', ')} built successfully on ${options.outdir}`
       )
+      rl.close()
       resolve()
     }
   })
