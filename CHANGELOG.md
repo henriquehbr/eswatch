@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.2...HEAD)
+#### [v0.7.3](https://github.com/henriquehbr/eswatch/compare/v0.7.2...v0.7.3)
 
 - style: implement changes suggested by eslint [`f1c9356`](https://github.com/henriquehbr/eswatch/commit/f1c935668ab21d18ad027a8d6038ab8913bee6a3)
-- fix: prevent process from hanging after build [`16e9392`](https://github.com/henriquehbr/eswatch/commit/16e93925834b66c193112cd7919166d2860e9cc2)
+- fix: prevent process from hanging after build [`484fa09`](https://github.com/henriquehbr/eswatch/commit/484fa099b0327a3d556a1d61b38acaadcdc48ad9)
 
 #### [v0.7.2](https://github.com/henriquehbr/eswatch/compare/v0.7.1...v0.7.2)
 
