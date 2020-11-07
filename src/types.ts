@@ -1,10 +1,10 @@
 import type { ParsedArgs } from 'minimist'
 
-export type WatchAndBuild = (options: CLIFlags) => Promise<void>
+type WatchAndBuild = (options: Readonly<CLIFlags>) => Promise<void>
 
-export type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
+type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
 
-export interface ESWatchFlags {
+interface ESWatchFlags {
   watch: string | readonly string[]
   clear?: boolean
   entry: string
@@ -12,7 +12,7 @@ export interface ESWatchFlags {
   standalone?: boolean
 }
 
-export interface ESBuildFlags {
+interface ESBuildFlags {
   bundle?: boolean
   external?: string[]
   platform?: 'browser' | 'node'
@@ -21,3 +21,5 @@ export interface ESBuildFlags {
   outdir?: string
   minify?: boolean
 }
+
+export { WatchAndBuild, CLIFlags, ESWatchFlags, ESBuildFlags }

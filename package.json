@@ -25,8 +25,8 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "git add CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --minify --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
-    "lint": "eslint --fix \"src/**/*.ts\" && tsc --noEmit -p ."
+    "dev": "eswatch --bundle --format esm --splitting --clear --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --clear --run --watch ./example/**/* ./example/index.ts\"",
+    "lint": "eslint --fix \"src/**/*.ts\""
   },
   "husky": {
     "hooks": {
@@ -43,7 +43,6 @@
     "auto-changelog": "^2.2.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.12.1",
-    "eslint-config-hbr": "^1.0.0-beta.4",
     "eslint-plugin-import": "^2.22.1",
     "eswatch": "^0.7.0",
     "husky": "^4.3.0",

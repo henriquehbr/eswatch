@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.2...HEAD)
+
+- style: implement changes suggested by eslint [`28b1449`](https://github.com/henriquehbr/eswatch/commit/28b14490f72d324225e5a669e20b648e45d2ee45)
+
 #### [v0.7.2](https://github.com/henriquehbr/eswatch/compare/v0.7.1...v0.7.2)
+
+> 2 November 2020
 
 - chore: implement automated changelog generation [`48c0b6c`](https://github.com/henriquehbr/eswatch/commit/48c0b6c272e5efbf6c28e3b54efd77d7c64d8570)
 - fix: build and exit when without --watch flag [`7ea4f81`](https://github.com/henriquehbr/eswatch/commit/7ea4f816cb139cbf2d49075603e77f7d3a3c5689)
