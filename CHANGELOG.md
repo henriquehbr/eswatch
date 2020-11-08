@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file. Dates are d
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.4...HEAD)
 
 - chore: automate pushing of git tags to remote [`a80ee95`](https://github.com/henriquehbr/eswatch/commit/a80ee95aa3950bd2e2c1aa29744464256162c5e3)
-- chore: re-add git tags for proper changelog generation [`c00078f`](https://github.com/henriquehbr/eswatch/commit/c00078f3df01d640fb6d4c736f3d579ba8b8e0b0)
+- build: generate minified source [`7c8538d`](https://github.com/henriquehbr/eswatch/commit/7c8538d30d3e2ef53e16b1f126fff6a0544d25c0)
+- chore: re-add git tags for proper changelog generation [`5b2b36f`](https://github.com/henriquehbr/eswatch/commit/5b2b36f43072ebab012977d7ea9d1eaa2b162300)
 
 #### [v0.7.4](https://github.com/henriquehbr/eswatch/compare/v0.7.3...v0.7.4)
 
