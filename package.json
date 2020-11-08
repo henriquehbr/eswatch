@@ -30,7 +30,8 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "yarn changelog -u && yarn amend-changelog"
+      "post-commit": "yarn changelog -u && yarn amend-changelog",
+      "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
     }
   },
   "devDependencies": {
