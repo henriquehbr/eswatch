@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.5...HEAD)
+#### [v0.7.6](https://github.com/henriquehbr/eswatch/compare/v0.7.5...v0.7.6)
 
-- fix: properly pass --external flag value to esbuild [`3ecc9d6`](https://github.com/henriquehbr/eswatch/commit/3ecc9d612ab7d3e0a9ed07ea1bc90e2c8a7fbd2f)
+- fix: properly pass --external flag value to esbuild [`24faa69`](https://github.com/henriquehbr/eswatch/commit/24faa691312c117b9b2b0166274e0eece96e8891)
 
 #### [v0.7.5](https://github.com/henriquehbr/eswatch/compare/v0.7.4...v0.7.5)
 
