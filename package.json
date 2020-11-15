@@ -25,11 +25,14 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "git add CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
+    "temp-eswatch-fix": "rimraf node_modules/.bin/eswatch*",
     "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/index.ts\"",
+    "build": "yarn temp-eswatch-fix && eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
   "husky": {
     "hooks": {
+      "pre-commit": "yarn build && git add .",
       "post-commit": "yarn changelog -u && yarn amend-changelog",
       "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
     }
@@ -47,6 +50,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eswatch": "^0.7.0",
     "husky": "^4.3.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.0.5"
   },
   "dependencies": {
