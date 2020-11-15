@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.5...HEAD)
+
+- fix: properly pass --external flag value to esbuild [`3ecc9d6`](https://github.com/henriquehbr/eswatch/commit/3ecc9d612ab7d3e0a9ed07ea1bc90e2c8a7fbd2f)
+
 #### [v0.7.5](https://github.com/henriquehbr/eswatch/compare/v0.7.4...v0.7.5)
+
+> 8 November 2020
 
 - chore: automate pushing of git tags to remote [`a80ee95`](https://github.com/henriquehbr/eswatch/commit/a80ee95aa3950bd2e2c1aa29744464256162c5e3)
 - build: generate minified source [`45d128c`](https://github.com/henriquehbr/eswatch/commit/45d128c7a5414886a7b65b23886aee731b42b241)

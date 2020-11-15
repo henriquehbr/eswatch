@@ -20,7 +20,6 @@ const watchAndBuild: WatchAndBuild = async options => {
   // TODO: remove `options.entry` on 1.0
   const entryPoints = options.entry ? [options.entry] : options._
   const splitting = options.format === 'esm' ? options.splitting : false
-
   // This is set to the built library inside node_modules
   const outdir = options.outdir ?? path.join(dirname, 'build')
   const external = [...builtinModules]
@@ -28,6 +27,7 @@ const watchAndBuild: WatchAndBuild = async options => {
     const { default: getDependencies } = await import('./getDependencies')
     external.push(...(await getDependencies()))
   }
+  options.external && external.push(...options.external)
   child?.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
