@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.6...HEAD)
+#### [v0.7.7](https://github.com/henriquehbr/eswatch/compare/v0.7.6...v0.7.7)
 
-- chore: build lib on pre-commit hook [`d31a446`](https://github.com/henriquehbr/eswatch/commit/d31a446b29e34a4c0bb5d358038d6864b3171d0d)
+- chore: build lib on pre-commit hook [`f0451ca`](https://github.com/henriquehbr/eswatch/commit/f0451ca579be68687c29af96e751a04209293204)
 
 #### [v0.7.6](https://github.com/henriquehbr/eswatch/compare/v0.7.5...v0.7.6)
 
