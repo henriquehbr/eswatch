@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import minimist from 'minimist'
 import type { CLIFlags } from './types'
 // This must me converted into a dynamic import

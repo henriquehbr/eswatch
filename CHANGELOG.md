@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.7...HEAD)
 
-- feat: add --version flag [`3f1ea4f`](https://github.com/henriquehbr/eswatch/commit/3f1ea4f2c860e097e45066e4b667291d4ffa54b3)
+- feat: add --version flag [`1c52b48`](https://github.com/henriquehbr/eswatch/commit/1c52b48a8d50806264f4930a3ec03f52354e93a1)
+- fix: re-add missing shebang [`2d3d33b`](https://github.com/henriquehbr/eswatch/commit/2d3d33b3a2178a044d3fca9a695af6111e2fbd07)
 
 #### [v0.7.7](https://github.com/henriquehbr/eswatch/compare/v0.7.6...v0.7.7)
 
