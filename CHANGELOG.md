@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.7...HEAD)
+#### [v0.8.0](https://github.com/henriquehbr/eswatch/compare/v0.7.7...v0.8.0)
 
 - feat: add --version flag [`1c52b48`](https://github.com/henriquehbr/eswatch/commit/1c52b48a8d50806264f4930a3ec03f52354e93a1)
-- fix: re-add missing shebang [`2d3d33b`](https://github.com/henriquehbr/eswatch/commit/2d3d33b3a2178a044d3fca9a695af6111e2fbd07)
+- fix: re-add missing shebang [`56dab1c`](https://github.com/henriquehbr/eswatch/commit/56dab1c989604845bcd2b3b0238d6bc86229553e)
 
 #### [v0.7.7](https://github.com/henriquehbr/eswatch/compare/v0.7.6...v0.7.7)
 
