@@ -11,6 +11,7 @@ const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 let child: ChildProcess | undefined
 
+// Investigate possible optimizations on this
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout

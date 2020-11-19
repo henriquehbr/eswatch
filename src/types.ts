@@ -10,6 +10,7 @@ interface ESWatchFlags {
   entry: string
   run?: boolean
   standalone?: boolean
+  version?: boolean
 }
 
 interface ESBuildFlags {

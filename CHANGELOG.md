@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.7.7...HEAD)
+
+- feat: add --version flag [`3f1ea4f`](https://github.com/henriquehbr/eswatch/commit/3f1ea4f2c860e097e45066e4b667291d4ffa54b3)
+
 #### [v0.7.7](https://github.com/henriquehbr/eswatch/compare/v0.7.6...v0.7.7)
+
+> 15 November 2020
 
 - chore: build lib on pre-commit hook [`f0451ca`](https://github.com/henriquehbr/eswatch/commit/f0451ca579be68687c29af96e751a04209293204)
 

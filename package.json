@@ -25,37 +25,38 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "git add CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "temp-eswatch-fix": "rimraf node_modules/.bin/eswatch*",
     "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/index.ts\"",
-    "build": "yarn temp-eswatch-fix && eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
+    "build": "eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && git add .",
       "post-commit": "yarn changelog -u && yarn amend-changelog",
       "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
     }
   },
+  "resolutions": {
+    "eswatch": "0.7.0"
+  },
   "devDependencies": {
-    "@types/eslint": "^7.2.4",
+    "@types/eslint": "^7.2.5",
     "@types/inquirer": "^7.3.1",
-    "@types/minimist": "^1.2.0",
-    "@types/node": "^14.14.6",
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
+    "@types/minimist": "^1.2.1",
+    "@types/node": "^14.14.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "auto-changelog": "^2.2.1",
     "cross-env": "^7.0.2",
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-plugin-import": "^2.22.1",
-    "eswatch": "^0.7.0",
+    "eswatch": "0.7.0",
     "husky": "^4.3.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.2"
   },
   "dependencies": {
     "chokidar": "^3.4.3",
-    "esbuild": "^0.8.0",
+    "esbuild": "^0.8.11",
     "find-up": "^5.0.0",
     "inquirer": "^7.3.3",
     "minimist": "^1.2.5"
