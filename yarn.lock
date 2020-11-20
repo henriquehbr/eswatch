@@ -569,11 +569,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.7.21:
-  version "0.7.22"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.7.22.tgz#9149b903f8128b7c45a754046c24199d76bbe08e"
-  integrity sha512-B43SYg8LGWYTCv9Gs0RnuLNwjzpuWOoCaZHTWEDEf5AfrnuDMerPVMdCEu7xOdhFvQ+UqfP2MGU9lxEy0JzccA==
-
 esbuild@^0.8.11:
   version "0.8.11"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.11.tgz#45b0066433463bb16e1bfef1cb7b2f8822de32fc"
@@ -730,13 +725,13 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eswatch@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.7.0.tgz#006b019afb3bffea4d68a31dea233b91aaeb2ba8"
-  integrity sha512-rqjldw34yHDsYdZ2/DmOltEyacYEr2BhUiE5TW+5VLNJAYi/8eB/hvRi8ResN91+wl8Kio2mzdu8ASWVwdvw/g==
+eswatch@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.8.0.tgz#bd2747f310e81ecc6945bb5d980a505321d0ab1e"
+  integrity sha512-GZIQ0LkAl23MpEB7cD0sCfiucz/mjESpjzkPy0jJKGFg2ZXeOgZFg9OW7/lSLRUzrJjK1p2f1td/DhsAwPfg7Q==
   dependencies:
     chokidar "^3.4.3"
-    esbuild "^0.7.21"
+    esbuild "^0.8.11"
     find-up "^5.0.0"
     inquirer "^7.3.3"
     minimist "^1.2.5"

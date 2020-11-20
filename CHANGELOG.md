@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.8.0...HEAD)
+
+- chore: bump eswatch version from 0.7.0 to 0.8.0 [`6a6c09a`](https://github.com/henriquehbr/eswatch/commit/6a6c09ac3fb146cd075338235cf1f8521444f9ce)
+
 #### [v0.8.0](https://github.com/henriquehbr/eswatch/compare/v0.7.7...v0.8.0)
+
+> 19 November 2020
 
 - feat: add --version flag [`1c52b48`](https://github.com/henriquehbr/eswatch/commit/1c52b48a8d50806264f4930a3ec03f52354e93a1)
 - fix: re-add missing shebang [`56dab1c`](https://github.com/henriquehbr/eswatch/commit/56dab1c989604845bcd2b3b0238d6bc86229553e)
