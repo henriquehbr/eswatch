@@ -6,7 +6,9 @@ const getDependencies = async () => {
   if (packageJsonPath) {
     const packageJsonString = readFileSync(packageJsonPath, { encoding: 'utf-8' })
     const packageJson = JSON.parse(packageJsonString)
-    return Object.keys(packageJson.dependencies)
+    const dependencies = Object.keys(packageJson.dependencies)
+    const devDependencies = Object.keys(packageJson.devDependencies)
+    return [...dependencies, ...devDependencies]
   }
   return []
 }
