@@ -1,20 +1,9 @@
-import path from 'path'
-import slash from 'slash'
-import fileExists from './fileExists'
 import isGlob from 'is-glob'
-import glob from 'tiny-glob'
+import globParser from './globParser'
+import fileExists from './fileExists'
 import type { CLIFlags } from 'types'
 
 type ValidateEntryPoints = (options: Readonly<CLIFlags>) => Promise<string[]>
-
-// Move this to a separated util
-const globParser = async (globPattern: string) => {
-  const normalizedPath = path.normalize(globPattern)
-  const forwardSlashedPath = slash(normalizedPath)
-  const globFiles = await glob(forwardSlashedPath)
-  const forwardSlashedGlobFiles = globFiles.map(slash)
-  return forwardSlashedGlobFiles
-}
 
 const validateEntryPoints: ValidateEntryPoints = async options => {
   const missingEntryPoint = options._.length < 1 && !options.entry

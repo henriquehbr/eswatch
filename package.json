@@ -25,7 +25,7 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "git add CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/indx.ts\"",
+    "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/index.ts\"",
     "build": "eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
