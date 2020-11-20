@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.0...HEAD)
 
-- chore(getDependencies): convert to named export [`915d42b`](https://github.com/henriquehbr/eswatch/commit/915d42b511c1c90b78a1f892454cb8937836548e)
+- chore: remove unused eslint devDependencies [`9574ce2`](https://github.com/henriquehbr/eswatch/commit/9574ce2a82b7db2b199819615485210ac671b4dc)
+- chore(getDependencies): convert to named export [`ae2430b`](https://github.com/henriquehbr/eswatch/commit/ae2430bfb71bba63b7ed5cb5f4e575ad9549beeb)
 
 #### [v0.9.0](https://github.com/henriquehbr/eswatch/compare/v0.8.0...v0.9.0)
 
