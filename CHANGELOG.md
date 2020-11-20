@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.1...HEAD)
+#### [v0.9.2](https://github.com/henriquehbr/eswatch/compare/v0.9.1...v0.9.2)
 
 - chore: bump dependencies [`4cd7f48`](https://github.com/henriquehbr/eswatch/commit/4cd7f486c3665c1acbbea82b4e6db70559eb3f9a)
 - chore: re-add build on pre-commit hook [`070f6c2`](https://github.com/henriquehbr/eswatch/commit/070f6c2df8aea2be723c4d24ae23c9af09569f45)
-- chore: set inquirer as devDependency [`dd38fa7`](https://github.com/henriquehbr/eswatch/commit/dd38fa7247a79c05115278a3d2cf1a7dc677f281)
+- chore: set inquirer as devDependency [`57906b7`](https://github.com/henriquehbr/eswatch/commit/57906b7e6a9c131fd825f15ce8cd19f9a6b741a9)
 
 #### [v0.9.1](https://github.com/henriquehbr/eswatch/compare/v0.9.0...v0.9.1)
 
