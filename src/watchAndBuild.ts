@@ -5,11 +5,16 @@ import path from 'path'
 import readline from 'readline'
 import { fileURLToPath } from 'url'
 import esbuild from 'esbuild'
+import getOptions from './getOptions'
+import validateEntryPoints from './validateEntryPoints'
 import type { WatchAndBuild } from './types'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 let child: ChildProcess | undefined
+let entryPoints: string[] | undefined
+
+const options = getOptions()
 
 // Investigate possible optimizations on this
 const rl = readline.createInterface({
@@ -17,9 +22,11 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-const watchAndBuild: WatchAndBuild = async options => {
+// Consider replacing this by a top-level await
+validateEntryPoints(options).then(entries => (entryPoints = entries))
+
+const watchAndBuild: WatchAndBuild = async () => {
   // TODO: remove `options.entry` on 1.0
-  const entryPoints = options.entry ? [options.entry] : options._
   const splitting = options.format === 'esm' ? options.splitting : false
   // This is set to the built library inside node_modules
   const outdir = options.outdir ?? path.join(dirname, 'build')

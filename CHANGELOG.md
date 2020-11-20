@@ -4,8 +4,9 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.8.0...HEAD)
 
+- feat: enable passing glob patterns as entry points [`9137294`](https://github.com/henriquehbr/eswatch/commit/9137294702ff640d7262149521d5753616ca43f5)
 - chore: bump eswatch version from 0.7.0 to 0.8.0 [`ab35193`](https://github.com/henriquehbr/eswatch/commit/ab3519335728b3bdd4c15235eb15b0dcf3e313d3)
-- refactor(validateEntryPoint): simplify syntax [`561419a`](https://github.com/henriquehbr/eswatch/commit/561419acfddd80e872bd89d8287722c817b531b0)
+- refactor(validateEntryPoint): simplify syntax [`5f1190e`](https://github.com/henriquehbr/eswatch/commit/5f1190e9a9aba763e3aeee02f030b52dd85efa27)
 - refactor(validateEntryPoint): remove unnecessary export [`10ffcad`](https://github.com/henriquehbr/eswatch/commit/10ffcadce89fc5dc3c69565beb1fae459ddd927d)
 
 #### [v0.8.0](https://github.com/henriquehbr/eswatch/compare/v0.7.7...v0.8.0)

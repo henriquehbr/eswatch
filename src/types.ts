@@ -1,6 +1,6 @@
 import type { ParsedArgs } from 'minimist'
 
-type WatchAndBuild = (options: Readonly<CLIFlags>) => Promise<void>
+type WatchAndBuild = () => Promise<void>
 
 type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
 

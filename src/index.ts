@@ -1,28 +1,23 @@
 #!/usr/bin/env node
-import minimist from 'minimist'
-import type { CLIFlags } from './types'
 // This must me converted into a dynamic import
 import watchAndBuild from './watchAndBuild'
+import getOptions from './getOptions'
 
-const options = minimist<CLIFlags>(process.argv.slice(2))
+const options = getOptions()
 
-if (options.version) {
-  import('./displayVersion').then(({ default: displayVersion }) => displayVersion())
-} else {
-  /**
-   * Consider moving this line to watchAndBuild, but first check if
-   * only `watchAndBuild()` function is run
-   */
-  import('./validateEntryPoints').then(({ default: validateEntryPoints }) =>
-    validateEntryPoints(options)
-  )
-
-  options.watch
-    ? import('chokidar').then(({ default: chokidar }) =>
-        chokidar
-          .watch(options.watch)
-          .on('ready', async () => watchAndBuild(options))
-          .on('change', async () => watchAndBuild(options))
-      )
-    : watchAndBuild(options)
+const main = async () => {
+  if (options.version) {
+    const { displayVersion } = await import('./displayVersion')
+    displayVersion()
+  } else if (options.watch) {
+    const chokidar = await import('chokidar')
+    chokidar
+      .watch(options.watch)
+      .on('ready', async () => watchAndBuild())
+      .on('change', async () => watchAndBuild())
+  } else {
+    watchAndBuild()
+  }
 }
+
+main()

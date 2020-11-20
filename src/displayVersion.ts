@@ -13,4 +13,4 @@ const displayVersion = () => {
   rl.close()
 }
 
-export default displayVersion
+export { displayVersion }
