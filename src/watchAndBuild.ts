@@ -32,7 +32,7 @@ const watchAndBuild: WatchAndBuild = async () => {
   const outdir = options.outdir ?? path.join(dirname, 'build')
   const external = [...builtinModules]
   if (!options.standalone) {
-    const { default: getDependencies } = await import('./getDependencies')
+    const { getDependencies } = await import('./getDependencies')
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)

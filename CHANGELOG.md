@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.0...HEAD)
+
+- chore(getDependencies): convert to named export [`915d42b`](https://github.com/henriquehbr/eswatch/commit/915d42b511c1c90b78a1f892454cb8937836548e)
+
 #### [v0.9.0](https://github.com/henriquehbr/eswatch/compare/v0.8.0...v0.9.0)
+
+> 20 November 2020
 
 - feat: enable passing glob patterns as entry points [`6b6ee00`](https://github.com/henriquehbr/eswatch/commit/6b6ee00531376d58549dfe4159ddf08a5ec0c4b2)
 - refactor(validateEntryPoint): modularize "fileExists" [`c8fd538`](https://github.com/henriquehbr/eswatch/commit/c8fd538f6d05e1195fce3b15a93903067f537fcc)

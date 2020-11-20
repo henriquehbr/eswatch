@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 import findUp from 'find-up'
 
-const getDependencies = async() => {
+const getDependencies = async () => {
   const packageJsonPath = await findUp('package.json')
   if (packageJsonPath) {
     const packageJsonString = readFileSync(packageJsonPath, { encoding: 'utf-8' })
@@ -11,4 +11,4 @@ const getDependencies = async() => {
   return []
 }
 
-export default getDependencies
+export { getDependencies }
