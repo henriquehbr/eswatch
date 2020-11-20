@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.0...HEAD)
+#### [v0.9.1](https://github.com/henriquehbr/eswatch/compare/v0.9.0...v0.9.1)
 
 - chore: remove unused eslint devDependencies [`c62bd89`](https://github.com/henriquehbr/eswatch/commit/c62bd8935abd389c1e47c5e12652a694f714141d)
+- fix: prevent bundling of imported devDependencies [`6c9a918`](https://github.com/henriquehbr/eswatch/commit/6c9a9184d8ba8994166733abc93a092b5ddd5605)
 - chore(getDependencies): convert to named export [`ae2430b`](https://github.com/henriquehbr/eswatch/commit/ae2430bfb71bba63b7ed5cb5f4e575ad9549beeb)
-- fix: prevent bundling of imported devDependencies [`a8ed9f1`](https://github.com/henriquehbr/eswatch/commit/a8ed9f1a7bbfc9cacb6f7f01562cd6c7be5f140b)
 
 #### [v0.9.0](https://github.com/henriquehbr/eswatch/compare/v0.8.0...v0.9.0)
 
