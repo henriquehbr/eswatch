@@ -1,13 +1,11 @@
 import path from 'path'
 import slash from 'slash'
-import { existsSync } from 'fs'
+import fileExists from './fileExists'
 import isGlob from 'is-glob'
 import glob from 'tiny-glob'
 import type { CLIFlags } from 'types'
 
 type ValidateEntryPoints = (options: Readonly<CLIFlags>) => Promise<string[]>
-
-type FileExists = (path: string) => Promise<string>
 
 // Move this to a separated util
 const globParser = async (globPattern: string) => {
@@ -16,17 +14,6 @@ const globParser = async (globPattern: string) => {
   const globFiles = await glob(forwardSlashedPath)
   const forwardSlashedGlobFiles = globFiles.map(slash)
   return forwardSlashedGlobFiles
-}
-
-// Move this to a separated util
-const fileExists: FileExists = async path => {
-  try {
-    return await new Promise((resolve, reject) =>
-      existsSync(path) ? resolve(path) : reject(`Couldn't find ${path} entry point`)
-    )
-  } catch (error) {
-    throw new Error(error)
-  }
 }
 
 const validateEntryPoints: ValidateEntryPoints = async options => {
