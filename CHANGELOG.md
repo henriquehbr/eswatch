@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.1...HEAD)
+
+- chore: re-add build on pre-commit hook [`da7f8ef`](https://github.com/henriquehbr/eswatch/commit/da7f8ef08cdfce13e47598ae7083e4ce908de000)
+
 #### [v0.9.1](https://github.com/henriquehbr/eswatch/compare/v0.9.0...v0.9.1)
+
+> 20 November 2020
 
 - chore: remove unused eslint devDependencies [`c62bd89`](https://github.com/henriquehbr/eswatch/commit/c62bd8935abd389c1e47c5e12652a694f714141d)
 - fix: prevent bundling of imported devDependencies [`6c9a918`](https://github.com/henriquehbr/eswatch/commit/6c9a9184d8ba8994166733abc93a092b5ddd5605)
