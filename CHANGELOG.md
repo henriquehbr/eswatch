@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.8.0...HEAD)
 
-- chore: bump eswatch version from 0.7.0 to 0.8.0 [`6a6c09a`](https://github.com/henriquehbr/eswatch/commit/6a6c09ac3fb146cd075338235cf1f8521444f9ce)
+- chore: bump eswatch version from 0.7.0 to 0.8.0 [`ab35193`](https://github.com/henriquehbr/eswatch/commit/ab3519335728b3bdd4c15235eb15b0dcf3e313d3)
+- refactor(validateEntryPoint): remove unnecessary export [`431ef90`](https://github.com/henriquehbr/eswatch/commit/431ef9086311b28ae6ff86b46466d4db7349b1d8)
 
 #### [v0.8.0](https://github.com/henriquehbr/eswatch/compare/v0.7.7...v0.8.0)
 

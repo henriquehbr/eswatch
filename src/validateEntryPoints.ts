@@ -1,7 +1,7 @@
 import { existsSync } from 'fs'
 import type { CLIFlags } from 'types'
 
-export type ValidateEntryPoints = (options: Readonly<CLIFlags>) => void
+type ValidateEntryPoints = (options: Readonly<CLIFlags>) => void
 
 const validateEntryPoints: ValidateEntryPoints = options => {
   const missingEntryPoint = options._.length < 1 && !options.entry
