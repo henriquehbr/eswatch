@@ -499,16 +499,18 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eswatch@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.8.0.tgz#bd2747f310e81ecc6945bb5d980a505321d0ab1e"
-  integrity sha512-GZIQ0LkAl23MpEB7cD0sCfiucz/mjESpjzkPy0jJKGFg2ZXeOgZFg9OW7/lSLRUzrJjK1p2f1td/DhsAwPfg7Q==
+eswatch@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.9.1.tgz#8b44e6d22d98f4e29fc72591aa95eff6e7f740f0"
+  integrity sha512-tQv44JJBF+xchQG24p69zIBf0XMQ6nUkAQsZT0UfLWwQ9DZRP6YPRd5FD9JIuw/Nt77EMCMZEekDl9Yc9cHvKA==
   dependencies:
     chokidar "^3.4.3"
     esbuild "^0.8.11"
     find-up "^5.0.0"
     inquirer "^7.3.3"
+    is-glob "^4.0.1"
     minimist "^1.2.5"
+    tiny-glob "^0.2.6"
 
 external-editor@^3.0.3:
   version "3.1.0"
@@ -633,12 +635,17 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
+globalyzer@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/globalyzer/-/globalyzer-0.1.0.tgz#cb76da79555669a1519d5a8edf093afaa0bf1465"
+  integrity sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==
+
 globalyzer@^0.1.0:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/globalyzer/-/globalyzer-0.1.4.tgz#bc8e273afe1ac7c24eea8def5b802340c5cc534f"
   integrity sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
 
-globrex@^0.1.1:
+globrex@^0.1.1, globrex@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
   integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
@@ -1241,6 +1248,14 @@ tiny-glob@^0.2.6:
   dependencies:
     globalyzer "^0.1.0"
     globrex "^0.1.1"
+
+tiny-glob@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.8.tgz#b2792c396cc62db891ffa161fe8b33e76123e531"
+  integrity sha512-vkQP7qOslq63XRX9kMswlby99kyO5OvKptw7AMwBVMjXEI7Tb61eoI5DydyEMOseyGS5anDN1VPoVxEvH01q8w==
+  dependencies:
+    globalyzer "0.1.0"
+    globrex "^0.1.2"
 
 tmp@^0.0.33:
   version "0.0.33"
