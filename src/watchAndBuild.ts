@@ -73,4 +73,4 @@ const watchAndBuild: WatchAndBuild = async () => {
   })
 }
 
-export default watchAndBuild
+export { watchAndBuild }

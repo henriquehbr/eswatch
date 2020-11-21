@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.2...HEAD)
+
+- fix: convert watchAndBuild to dynamic import [`34f08dc`](https://github.com/henriquehbr/eswatch/commit/34f08dc4d7defff2cee9622462dcc52e975fa6b0)
+
 #### [v0.9.2](https://github.com/henriquehbr/eswatch/compare/v0.9.1...v0.9.2)
+
+> 20 November 2020
 
 - chore: bump dependencies [`4cd7f48`](https://github.com/henriquehbr/eswatch/commit/4cd7f486c3665c1acbbea82b4e6db70559eb3f9a)
 - chore: re-add build on pre-commit hook [`070f6c2`](https://github.com/henriquehbr/eswatch/commit/070f6c2df8aea2be723c4d24ae23c9af09569f45)
