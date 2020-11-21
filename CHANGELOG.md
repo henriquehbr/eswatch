@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.3...HEAD)
+
+- fix: build eswatch before publishing to npm [`00b5763`](https://github.com/henriquehbr/eswatch/commit/00b5763b00eeb2670441d53e8981231be0d4c2a8)
+
 #### [v0.9.3](https://github.com/henriquehbr/eswatch/compare/v0.9.2...v0.9.3)
+
+> 21 November 2020
 
 - fix: convert watchAndBuild to dynamic import [`d6836f4`](https://github.com/henriquehbr/eswatch/commit/d6836f4b293e26ed326728937371e7cc3f4da89f)
 
