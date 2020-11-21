@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.3...HEAD)
+#### [v0.9.4](https://github.com/henriquehbr/eswatch/compare/v0.9.3...v0.9.4)
 
-- fix: build eswatch before publishing to npm [`00b5763`](https://github.com/henriquehbr/eswatch/commit/00b5763b00eeb2670441d53e8981231be0d4c2a8)
+- fix: build eswatch before publishing to npm [`abc1bd5`](https://github.com/henriquehbr/eswatch/commit/abc1bd51b0f30e211d79b2799a454420dabfacc8)
 
 #### [v0.9.3](https://github.com/henriquehbr/eswatch/compare/v0.9.2...v0.9.3)
 
