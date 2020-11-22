@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.4...HEAD)
+#### [v0.9.5](https://github.com/henriquehbr/eswatch/compare/v0.9.4...v0.9.5)
 
 - chore: bump dependencies [`00b72e9`](https://github.com/henriquehbr/eswatch/commit/00b72e9e0b1c527515f7d0e0677f7f565d08f895)
 - refactor(displayVersion): get only "version" from package.json [`133b73f`](https://github.com/henriquehbr/eswatch/commit/133b73f07f7b3e3ff616fca8cd8c0d4bf1153908)
-- build: delete lib directory before building [`9ddfc84`](https://github.com/henriquehbr/eswatch/commit/9ddfc84da494790704375ba073769db50e82a2e3)
+- build: delete lib directory before building [`1904d20`](https://github.com/henriquehbr/eswatch/commit/1904d201468e87f4400a688e7c357cab28ffc14a)
 
 #### [v0.9.4](https://github.com/henriquehbr/eswatch/compare/v0.9.3...v0.9.4)
 
