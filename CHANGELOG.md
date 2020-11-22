@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.4...HEAD)
+
+- chore: bump dependencies [`727fd04`](https://github.com/henriquehbr/eswatch/commit/727fd04ded3d24d15a644a38494dfe86fdf6e031)
+
 #### [v0.9.4](https://github.com/henriquehbr/eswatch/compare/v0.9.3...v0.9.4)
+
+> 21 November 2020
 
 - fix: build eswatch before publishing to npm [`abc1bd5`](https://github.com/henriquehbr/eswatch/commit/abc1bd51b0f30e211d79b2799a454420dabfacc8)
 
