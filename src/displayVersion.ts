@@ -1,6 +1,6 @@
 import readline from 'readline'
 import esbuild from 'esbuild'
-import eswatch from '../package.json'
+import { version } from '../package.json'
 
 const displayVersion = () => {
   // Investigate possible optimizations on this
@@ -8,7 +8,7 @@ const displayVersion = () => {
     input: process.stdin,
     output: process.stdout
   })
-  console.log(`eswatch version ${eswatch.version}`)
+  console.log(`eswatch version ${version}`)
   console.log(`esbuild version ${esbuild.version}`)
   rl.close()
 }
