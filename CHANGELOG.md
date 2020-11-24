@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.5...HEAD)
+#### [v0.10.0](https://github.com/henriquehbr/eswatch/compare/v0.9.5...v0.10.0)
 
 - chore: bump dependencies [`8615249`](https://github.com/henriquehbr/eswatch/commit/8615249563e5a7e34040133e9205cdfd13dd5475)
-- feat: add --outext flag [`2c246b4`](https://github.com/henriquehbr/eswatch/commit/2c246b46533d059e6ef9c62e307f9b3af61c048d)
+- feat: add --outext flag [`e97059f`](https://github.com/henriquehbr/eswatch/commit/e97059f11be12143861b5e633e738a571b7d4459)
 
 #### [v0.9.5](https://github.com/henriquehbr/eswatch/compare/v0.9.4...v0.9.5)
 
