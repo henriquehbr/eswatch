@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.0...HEAD)
+
+- refactor: modularize CLI options parsing [`2f4a315`](https://github.com/henriquehbr/eswatch/commit/2f4a315caf038432f17b88071354d6e5c64dbe27)
+
 #### [v0.10.0](https://github.com/henriquehbr/eswatch/compare/v0.9.5...v0.10.0)
+
+> 24 November 2020
 
 - chore: bump dependencies [`8615249`](https://github.com/henriquehbr/eswatch/commit/8615249563e5a7e34040133e9205cdfd13dd5475)
 - feat: add --outext flag [`e97059f`](https://github.com/henriquehbr/eswatch/commit/e97059f11be12143861b5e633e738a571b7d4459)

@@ -1,15 +1,11 @@
 import { spawn } from 'child_process'
 import type { ChildProcess } from 'child_process'
-import { builtinModules } from 'module'
-import path from 'path'
 import readline from 'readline'
-import { fileURLToPath } from 'url'
 import esbuild from 'esbuild'
 import getOptions from './getOptions'
 import validateEntryPoints from './validateEntryPoints'
+import parseOptions from './parseOptions'
 import type { WatchAndBuild } from './types'
-
-const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 let child: ChildProcess | undefined
 let entryPoints: string[] | undefined
@@ -26,19 +22,7 @@ const rl = readline.createInterface({
 validateEntryPoints(options).then(entries => (entryPoints = entries))
 
 const watchAndBuild: WatchAndBuild = async () => {
-  // TODO: remove `options.entry` on 1.0
-  const splitting = options.format === 'esm' ? options.splitting : false
-  // Put this and splitting in a separated modules, with proper warnings about incorrect usage
-  const outExtension = options.outext ? { '.js': options.outext } : { '.js': '.js' }
-  // This is set to the built library inside node_modules
-  const outdir = options.outdir ?? path.join(dirname, 'build')
-  const external = [...builtinModules]
-  if (!options.standalone) {
-    const { getDependencies } = await import('./getDependencies')
-    external.push(...(await getDependencies()))
-  }
-  options.external && external.push(...options.external)
-
+  const { external, outExtension, splitting, outdir } = await parseOptions(options)
   child?.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
