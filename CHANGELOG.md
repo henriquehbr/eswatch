@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.9.5...HEAD)
 
-- chore: bump dependencies [`d1a72aa`](https://github.com/henriquehbr/eswatch/commit/d1a72aadfbcccc2698b09cbf5cc78ffd4b93f339)
+- chore: bump dependencies [`8615249`](https://github.com/henriquehbr/eswatch/commit/8615249563e5a7e34040133e9205cdfd13dd5475)
+- feat: add --outext flag [`2c246b4`](https://github.com/henriquehbr/eswatch/commit/2c246b46533d059e6ef9c62e307f9b3af61c048d)
 
 #### [v0.9.5](https://github.com/henriquehbr/eswatch/compare/v0.9.4...v0.9.5)
 

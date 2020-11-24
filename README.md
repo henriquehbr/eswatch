@@ -28,4 +28,5 @@ esbuild options:
                 is browser and cjs when platform is node)
   --splitting   Enable code splitting (currently only works for esm)
   --outdir      The output directory (for multiple entry points)
+  --outext      Use a custom output extension instead of ".js"
 ```

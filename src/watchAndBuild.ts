@@ -28,6 +28,8 @@ validateEntryPoints(options).then(entries => (entryPoints = entries))
 const watchAndBuild: WatchAndBuild = async () => {
   // TODO: remove `options.entry` on 1.0
   const splitting = options.format === 'esm' ? options.splitting : false
+  // Put this and splitting in a separated modules, with proper warnings about incorrect usage
+  const outExtension = options.outext ? { '.js': options.outext } : { '.js': '.js' }
   // This is set to the built library inside node_modules
   const outdir = options.outdir ?? path.join(dirname, 'build')
   const external = [...builtinModules]
@@ -36,12 +38,14 @@ const watchAndBuild: WatchAndBuild = async () => {
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)
+
   child?.kill()
   const service = await esbuild.startService()
   options.clear && console.clear()
   await service.build({
     bundle: options.bundle,
     entryPoints,
+    outExtension,
     format: options.format,
     minify: options.minify,
     outdir,

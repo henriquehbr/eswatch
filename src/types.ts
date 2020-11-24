@@ -20,6 +20,7 @@ interface ESBuildFlags {
   format?: 'cjs' | 'esm' | 'iife'
   splitting: boolean
   outdir?: string
+  outext?: string
   minify?: boolean
 }
 

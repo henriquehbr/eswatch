@@ -23,7 +23,7 @@
     "version": "yarn changelog -p",
     "postversion": "yes \"\" | yarn publish",
     "changelog": "auto-changelog -l false --hide-credit",
-    "postchangelog": "yarn build && git add .",
+    "postchangelog": "yarn build && git add lib/. CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
     "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/index.ts\"",
     "prebuild": "rimraf lib",
@@ -32,7 +32,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && git add .",
+      "pre-commit": "yarn build && git add lib/.",
       "post-commit": "yarn changelog -u && yarn amend-changelog",
       "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
     }
