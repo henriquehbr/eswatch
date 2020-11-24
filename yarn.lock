@@ -383,6 +383,11 @@ esbuild@^0.8.12:
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.12.tgz#bea417dbb228a971a5df255cb1b8acf5ea96ef52"
   integrity sha512-SWCUodYFOkKcu2Jbum12NbD98MoQq2EWWvHfQtpR2C9RkPzRr1BE4cavYjQpQV01hBR19UAftXl0TVLjka/i3Q==
 
+esbuild@^0.8.14:
+  version "0.8.14"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.14.tgz#e62c8304e85b74a3c88654aa21b030202d06d672"
+  integrity sha512-oeG0jVfG1KXM8ulwaq6Apt2STyXvOQHdHOTkN+HfNCMnXlBk4cscA0ZI5cvzVDKaBSJ0Fs6taxanqPJHvcxfIw==
+
 escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -499,10 +504,10 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eswatch@^0.9.5:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.9.5.tgz#1304644a2ce20ca7b8cebdeb0291bfecb4df666d"
-  integrity sha512-NZxdCY+2wszYhCCQHLxM/9TEUaI+VFMm5NP7ijtT1opKX0EkMiAx/2nseSuqMlCfC/liyfTODhCKceZ97HR6eg==
+eswatch@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/eswatch/-/eswatch-0.10.0.tgz#21f4e718ed3d658233ec285547358c8d9c7adaff"
+  integrity sha512-h1I6WS/KFsqJSDIWHK4cb/AJkKDXpk4WAyH4ONXnBp7AedoYip7k46vfj1xlQ7A6MSquVT5rf9P3OLTz+pD9gA==
   dependencies:
     chokidar "^3.4.3"
     esbuild "^0.8.12"
