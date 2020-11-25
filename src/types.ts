@@ -19,7 +19,7 @@ interface ESBuildFlags {
   platform?: 'browser' | 'node'
   format?: 'cjs' | 'esm' | 'iife'
   splitting: boolean
-  outdir?: string
+  outdir: string
   outext?: string
   minify?: boolean
 }
