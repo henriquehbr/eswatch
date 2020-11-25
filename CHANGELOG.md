@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 - refactor: modularize watch/build process [`96943a5`](https://github.com/henriquehbr/eswatch/commit/96943a53e7788bf4bcdec5ddb67415b103142aa6)
 - refactor: modularize CLI options parsing [`50be3b7`](https://github.com/henriquehbr/eswatch/commit/50be3b7223dfaac175ad7df164c81e4ea32f9de4)
-- refactor: transform relative imports into absolute [`530861c`](https://github.com/henriquehbr/eswatch/commit/530861c52ce5ee3f2d2c6bb0e279334cdccd4274)
+- refactor: transform relative imports into absolute [`105b0bb`](https://github.com/henriquehbr/eswatch/commit/105b0bbcc811f6af69c95a5e4af3fb42f4444b60)
+- refactor(parseOptions): add "incremental" option [`b6df8cf`](https://github.com/henriquehbr/eswatch/commit/b6df8cf2ef7585bf0ea6f4f28b73e32b6c4ece24)
 - chore: bump dependencies [`f183e10`](https://github.com/henriquehbr/eswatch/commit/f183e10b058040f5d777209bc9985bfadbb44386)
 
 #### [v0.10.0](https://github.com/henriquehbr/eswatch/compare/v0.9.5...v0.10.0)
