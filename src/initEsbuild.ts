@@ -1,8 +1,8 @@
 import esbuild from 'esbuild'
 import type { BuildResult } from 'esbuild'
 import { postBuild } from 'postBuild'
-import { getEsbuildConfig } from 'getEsbuildConfig'
-import getCLIOptions from 'getOptions'
+import { getEsbuildConfig } from 'helpers'
+import getCLIOptions from 'helpers/getOptions'
 
 // Simplify this type
 type InitEsbuild = () => Promise<() => Promise<[BuildResult, void]>>

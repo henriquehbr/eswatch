@@ -1,7 +1,6 @@
 import type { ChildProcess } from 'child_process'
-import getCLIOptions from './getOptions'
 import readline from 'readline'
-import runCommand from './runCommand'
+import { getCLIOptions, runCommand } from 'helpers'
 import type { PostBuild } from './types'
 
 let child: ChildProcess | undefined

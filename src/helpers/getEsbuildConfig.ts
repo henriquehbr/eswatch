@@ -1,7 +1,6 @@
 import validateEntryPoints from 'validateEntryPoints'
-import parseOptions from 'parseOptions'
 import type { BuildOptions } from 'esbuild'
-import getCLIOptions from 'getOptions'
+import { getCLIOptions, parseOptions } from 'helpers'
 
 type GetEsbuildConfig = () => Promise<BuildOptions>
 

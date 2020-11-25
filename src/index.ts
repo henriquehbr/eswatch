@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { initEsbuild } from 'initEsbuild'
-import getCLIOptions from 'getOptions'
+import getCLIOptions from 'helpers/getOptions'
 
 const main = async () => {
   const options = getCLIOptions()
