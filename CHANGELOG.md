@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.2...HEAD)
+#### [v0.10.3](https://github.com/henriquehbr/eswatch/compare/v0.10.2...v0.10.3)
 
-- fix: properly pass "outdir" to rimraf [`d963f17`](https://github.com/henriquehbr/eswatch/commit/d963f17faa9d1570054ab54fcdc49c9469860865)
+- fix: properly pass "outdir" to rimraf [`817330d`](https://github.com/henriquehbr/eswatch/commit/817330d47701843c44e8925ef76fe406156734fc)
 
 #### [v0.10.2](https://github.com/henriquehbr/eswatch/compare/v0.10.1...v0.10.2)
 
