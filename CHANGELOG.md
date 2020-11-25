@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.2...HEAD)
+
+- fix: properly pass "outdir" to rimraf [`d963f17`](https://github.com/henriquehbr/eswatch/commit/d963f17faa9d1570054ab54fcdc49c9469860865)
+
 #### [v0.10.2](https://github.com/henriquehbr/eswatch/compare/v0.10.1...v0.10.2)
+
+> 25 November 2020
 
 - fix: clean output directory before each build [`424eefc`](https://github.com/henriquehbr/eswatch/commit/424eefc6ff9391cc1c8b215bb6970d84777c5b4c)
 - refactor: prefix local imports with "@eswatch/" [`cf221c1`](https://github.com/henriquehbr/eswatch/commit/cf221c1b9159d7b210b3de8e4da909069970dbb7)

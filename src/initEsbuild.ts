@@ -9,8 +9,9 @@ const initEsbuild = async () => {
   const esbuildConfig = await getEsbuildConfig()
   const esbuildService = options.watch && (await esbuild.startService())
   const build = esbuildService ? esbuildService.build : esbuild.build
+  // Replace non-null assertion for a better fix
   return async () =>
-    await Promise.all([rimraf.sync(options.outdir), build(esbuildConfig), postBuild()])
+    await Promise.all([rimraf.sync(esbuildConfig.outdir!), build(esbuildConfig), postBuild()])
 }
 
 export { initEsbuild }
