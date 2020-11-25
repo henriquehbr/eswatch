@@ -1,6 +1,6 @@
 import type { ParsedArgs } from 'minimist'
 
-type WatchAndBuild = () => Promise<void>
+type PostBuild = () => Promise<void>
 
 type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
 
@@ -24,4 +24,4 @@ interface ESBuildFlags {
   minify?: boolean
 }
 
-export { WatchAndBuild, CLIFlags, ESWatchFlags, ESBuildFlags }
+export { PostBuild, CLIFlags, ESWatchFlags, ESBuildFlags }

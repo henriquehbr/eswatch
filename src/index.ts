@@ -1,20 +1,20 @@
 #!/usr/bin/env node
-import getOptions from './getOptions'
-
-const options = getOptions()
+import { initEsbuild } from 'initEsbuild'
+import { getCLIOptions } from 'helpers'
 
 const main = async () => {
+  const options = getCLIOptions()
   if (options.version) {
     const { displayVersion } = await import('./displayVersion')
     return displayVersion()
   }
-  const { watchAndBuild } = await import('./watchAndBuild')
+  const buildSteps = await initEsbuild()
   options.watch
     ? (await import('chokidar'))
         .watch(options.watch)
-        .on('ready', async () => watchAndBuild())
-        .on('change', async () => watchAndBuild())
-    : watchAndBuild()
+        .on('ready', async () => await buildSteps())
+        .on('change', async () => await buildSteps())
+    : await buildSteps()
 }
 
 main()
