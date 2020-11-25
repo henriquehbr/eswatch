@@ -1,7 +1,7 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { builtinModules } from 'module'
-import { getCLIOptions } from 'helpers'
+import { getCLIOptions } from '@eswatch/helpers'
 
 interface ParsedOptions {
   splitting: boolean
@@ -24,7 +24,7 @@ const parseOptions: ParseOptions = async () => {
   const outdir = options.outdir ?? path.join(dirname, 'build')
   const external = [...builtinModules]
   if (!options.standalone) {
-    const { getDependencies } = await import('helpers')
+    const { getDependencies } = await import('@eswatch/helpers')
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)

@@ -1,6 +1,6 @@
 import { spawn } from 'child_process'
 import type { ChildProcess } from 'child_process'
-import type { CLIFlags } from 'types'
+import type { CLIFlags } from '@eswatch/helpers'
 
 type RunOutput = (options: CLIFlags) => ChildProcess
 

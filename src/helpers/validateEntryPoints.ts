@@ -1,6 +1,6 @@
 import isGlob from 'is-glob'
-import { globParser, fileExists } from 'helpers'
-import type { CLIFlags } from 'types'
+import { globParser, fileExists } from '@eswatch/helpers'
+import type { CLIFlags } from '@eswatch/types'
 
 type ValidateEntryPoints = (options: Readonly<CLIFlags>) => Promise<string[]>
 

@@ -1,5 +1,5 @@
 import type { BuildOptions } from 'esbuild'
-import { getCLIOptions, parseOptions, validateEntryPoints } from 'helpers'
+import { getCLIOptions, parseOptions, validateEntryPoints } from '@eswatch/helpers'
 
 type GetEsbuildConfig = () => Promise<BuildOptions>
 

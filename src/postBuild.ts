@@ -1,7 +1,7 @@
 import type { ChildProcess } from 'child_process'
 import readline from 'readline'
-import { getCLIOptions, runCommand } from 'helpers'
-import type { PostBuild } from 'types'
+import { getCLIOptions, runCommand } from '@eswatch/helpers'
+import type { PostBuild } from '@eswatch/types'
 
 let child: ChildProcess | undefined
 

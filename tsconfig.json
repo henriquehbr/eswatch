@@ -9,7 +9,9 @@
     "strict": true,
     "moduleResolution": "node",
     "noUnusedLocals": true,
-    "baseUrl": "./src"
+    "paths": {
+      "@eswatch/*": ["./src/*"]
+    }
   },
   "compileOnSave": true,
   "include": ["./src"]
