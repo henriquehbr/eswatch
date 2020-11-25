@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.1...HEAD)
+
+- chore: bump eswatch from 0.10.0 to 0.10.1 [`521e9cb`](https://github.com/henriquehbr/eswatch/commit/521e9cb72dfa912c094bcb6d2a4260237be1aae9)
+
 #### [v0.10.1](https://github.com/henriquehbr/eswatch/compare/v0.10.0...v0.10.1)
+
+> 25 November 2020
 
 - Separate core and helpers modules [`#3`](https://github.com/henriquehbr/eswatch/pull/3)
 - refactor: modularize watch/build process [`96943a5`](https://github.com/henriquehbr/eswatch/commit/96943a53e7788bf4bcdec5ddb67415b103142aa6)

@@ -46,7 +46,7 @@
     "auto-changelog": "^2.2.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.14.0",
-    "eswatch": "^0.10.0",
+    "eswatch": "^0.10.1",
     "husky": "^4.3.0",
     "inquirer": "^7.3.3",
     "rimraf": "^3.0.2",
