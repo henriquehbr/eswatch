@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.1...HEAD)
+#### [v0.10.2](https://github.com/henriquehbr/eswatch/compare/v0.10.1...v0.10.2)
 
-- fix: clean output directory before each build [`1984feb`](https://github.com/henriquehbr/eswatch/commit/1984feb33cffc51b57941142ac53d06a9600c31a)
+- fix: clean output directory before each build [`424eefc`](https://github.com/henriquehbr/eswatch/commit/424eefc6ff9391cc1c8b215bb6970d84777c5b4c)
 - refactor: prefix local imports with "@eswatch/" [`cf221c1`](https://github.com/henriquehbr/eswatch/commit/cf221c1b9159d7b210b3de8e4da909069970dbb7)
 - chore: bump eswatch from 0.10.0 to 0.10.1 [`a6dfdbd`](https://github.com/henriquehbr/eswatch/commit/a6dfdbd4ee170e1120c9913ec118a9bbb6ba223f)
 
