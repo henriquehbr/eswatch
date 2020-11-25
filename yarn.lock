@@ -80,10 +80,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.6.tgz#146d3da57b3c636cc0d1769396ce1cfa8991147f"
   integrity sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
 
-"@types/node@^14.14.9":
-  version "14.14.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.9.tgz#04afc9a25c6ff93da14deabd65dc44485b53c8d6"
-  integrity sha512-JsoLXFppG62tWTklIoO4knA+oDTYsmqWxHRvd4lpmfQRNhX6osheUOWETP2jMoV/2bEHuMra8Pp3Dmo/stBFcw==
+"@types/node@^14.14.10":
+  version "14.14.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
+  integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -383,10 +383,10 @@ esbuild@^0.8.12:
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.12.tgz#bea417dbb228a971a5df255cb1b8acf5ea96ef52"
   integrity sha512-SWCUodYFOkKcu2Jbum12NbD98MoQq2EWWvHfQtpR2C9RkPzRr1BE4cavYjQpQV01hBR19UAftXl0TVLjka/i3Q==
 
-esbuild@^0.8.14:
-  version "0.8.14"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.14.tgz#e62c8304e85b74a3c88654aa21b030202d06d672"
-  integrity sha512-oeG0jVfG1KXM8ulwaq6Apt2STyXvOQHdHOTkN+HfNCMnXlBk4cscA0ZI5cvzVDKaBSJ0Fs6taxanqPJHvcxfIw==
+esbuild@^0.8.15:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.15.tgz#cbc4d82a7fc4571d455233456e6fba83fd0364f1"
+  integrity sha512-mSaLo9t/oYtQE6FRUEdO47Pr8PisSPzHtgr+LcihIcjBEhbYwjT6WLCQ7noDoTBfIatBCw229rtmIwl9u9UQwg==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
