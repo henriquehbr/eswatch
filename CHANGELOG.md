@@ -8,9 +8,10 @@ All notable changes to this project will be documented in this file. Dates are d
 - refactor: modularize CLI options parsing [`50be3b7`](https://github.com/henriquehbr/eswatch/commit/50be3b7223dfaac175ad7df164c81e4ea32f9de4)
 - refactor: return build steps through Promise.all() [`f4f9b2b`](https://github.com/henriquehbr/eswatch/commit/f4f9b2b818754f63b38a777e971f1946d804104e)
 - refactor: transform relative imports into absolute [`105b0bb`](https://github.com/henriquehbr/eswatch/commit/105b0bbcc811f6af69c95a5e4af3fb42f4444b60)
-- refactor: move helper modules to a separated folder [`fd035f2`](https://github.com/henriquehbr/eswatch/commit/fd035f28c7ea149e7d6ff937b18033e9bf351554)
+- refactor: move helper modules to a separated folder [`6087ef3`](https://github.com/henriquehbr/eswatch/commit/6087ef3c0a20820fb10d1959aeeb8f4733d5b961)
 - refactor(parseOptions): add "incremental" option [`3b60fc3`](https://github.com/henriquehbr/eswatch/commit/3b60fc3e94464c452f2e23a2d83cf896e6e7ce8a)
 - chore: bump dependencies [`f183e10`](https://github.com/henriquehbr/eswatch/commit/f183e10b058040f5d777209bc9985bfadbb44386)
+- refactor: redirect imports to helpers to barrel file [`0d7735d`](https://github.com/henriquehbr/eswatch/commit/0d7735dcb59815f5fc478713358d63e1f744f340)
 
 #### [v0.10.0](https://github.com/henriquehbr/eswatch/compare/v0.9.5...v0.10.0)
 
