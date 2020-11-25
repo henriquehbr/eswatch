@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { build } from 'build'
+import { initEsbuild } from 'initEsbuild'
 import getCLIOptions from 'getOptions'
 
 const main = async () => {
@@ -8,7 +8,13 @@ const main = async () => {
     const { displayVersion } = await import('./displayVersion')
     return displayVersion()
   }
-  await build(options)
+  const buildSteps = await initEsbuild()
+  options.watch
+    ? (await import('chokidar'))
+        .watch(options.watch)
+        .on('ready', async () => await buildSteps())
+        .on('change', async () => await buildSteps())
+    : await buildSteps()
 }
 
 main()
