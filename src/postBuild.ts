@@ -4,8 +4,6 @@ import readline from 'readline'
 import runCommand from './runCommand'
 import type { PostBuild } from './types'
 
-const options = getCLIOptions()
-
 let child: ChildProcess | undefined
 
 // Investigate possible optimizations on this
@@ -15,6 +13,7 @@ const rl = readline.createInterface({
 })
 
 const postBuild: PostBuild = async () => {
+  const options = getCLIOptions()
   options.clear && console.clear()
   child?.kill()
   return new Promise(resolve => {

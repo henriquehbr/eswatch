@@ -1,7 +1,7 @@
 import esbuild from 'esbuild'
-import { postBuild } from './postBuild'
-import { getEsbuildConfig } from './getEsbuildConfig'
-import { CLIFlags } from './types'
+import { postBuild } from 'postBuild'
+import { getEsbuildConfig } from 'getEsbuildConfig'
+import { CLIFlags } from 'types'
 
 type Build = (options: CLIFlags) => Promise<void>
 

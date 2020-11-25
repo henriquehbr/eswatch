@@ -1,7 +1,7 @@
-import validateEntryPoints from './validateEntryPoints'
-import parseOptions from './parseOptions'
+import validateEntryPoints from 'validateEntryPoints'
+import parseOptions from 'parseOptions'
 import type { BuildOptions } from 'esbuild'
-import type { CLIFlags } from './types'
+import type { CLIFlags } from 'types'
 
 type GetEsbuildConfig = (options: CLIFlags) => Promise<BuildOptions>
 

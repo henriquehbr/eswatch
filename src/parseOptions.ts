@@ -1,7 +1,7 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { builtinModules } from 'module'
-import type { CLIFlags } from './types'
+import type { CLIFlags } from 'types'
 
 interface ParsedOptions {
   splitting: boolean

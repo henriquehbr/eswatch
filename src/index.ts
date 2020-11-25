@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { build } from './build'
-import getOptions from './getOptions'
+import { build } from 'build'
+import getCLIOptions from 'getOptions'
 
 const main = async () => {
-  const options = getOptions()
+  const options = getCLIOptions()
   if (options.version) {
     const { displayVersion } = await import('./displayVersion')
     return displayVersion()

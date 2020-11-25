@@ -1,6 +1,6 @@
 import isGlob from 'is-glob'
-import globParser from './globParser'
-import fileExists from './fileExists'
+import globParser from 'globParser'
+import fileExists from 'fileExists'
 import type { CLIFlags } from 'types'
 
 type ValidateEntryPoints = (options: Readonly<CLIFlags>) => Promise<string[]>
