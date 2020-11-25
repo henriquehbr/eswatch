@@ -11,7 +11,8 @@ All notable changes to this project will be documented in this file. Dates are d
 - refactor: move helper modules to a separated folder [`6087ef3`](https://github.com/henriquehbr/eswatch/commit/6087ef3c0a20820fb10d1959aeeb8f4733d5b961)
 - refactor(parseOptions): add "incremental" option [`3b60fc3`](https://github.com/henriquehbr/eswatch/commit/3b60fc3e94464c452f2e23a2d83cf896e6e7ce8a)
 - chore: bump dependencies [`f183e10`](https://github.com/henriquehbr/eswatch/commit/f183e10b058040f5d777209bc9985bfadbb44386)
-- refactor: redirect imports to helpers to barrel file [`0d7735d`](https://github.com/henriquehbr/eswatch/commit/0d7735dcb59815f5fc478713358d63e1f744f340)
+- refactor: redirect imports to helpers to barrel file [`aaebc7c`](https://github.com/henriquehbr/eswatch/commit/aaebc7c87a874b525c85423c7a692ea8284abd81)
+- refactor(validateEntryPoints): move to helpers [`47ba633`](https://github.com/henriquehbr/eswatch/commit/47ba63375df36cf81bd98871d6769fa231cee7cb)
 
 #### [v0.10.0](https://github.com/henriquehbr/eswatch/compare/v0.9.5...v0.10.0)
 
