@@ -1,6 +1,6 @@
 import type { ChildProcess } from 'child_process'
 import readline from 'readline'
-import { getCLIOptions, runCommand } from '@eswatch/helpers'
+import { getCLIOptions, runCommand, parseOptions } from '@eswatch/helpers'
 import type { PostBuild } from '@eswatch/types'
 
 let child: ChildProcess | undefined
@@ -13,6 +13,7 @@ const rl = readline.createInterface({
 
 const postBuild: PostBuild = async () => {
   const options = getCLIOptions()
+  const { entryPoints, outdir } = await parseOptions()
   options.clear && console.clear()
   child?.kill()
   return new Promise(resolve => {
@@ -24,10 +25,7 @@ const postBuild: PostBuild = async () => {
         options.watch ? resolve() : process.exit()
       })
     } else {
-      // Set `outdir` as an alternative (`options.outdir || outdir`)
-      console.log(
-        `${options.entry || options._.join(', ')} built successfully on ${options.outdir}`
-      )
+      console.log(`${entryPoints.join(', ')} built successfully on ${outdir}`)
       rl.close()
       resolve()
     }
