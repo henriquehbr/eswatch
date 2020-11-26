@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.3...HEAD)
+
+- chore: bump eswatch from 0.10.2 to 0.10.3 [`f60058e`](https://github.com/henriquehbr/eswatch/commit/f60058e7bba5dcda7e21aa23e9ac5b3f731255f2)
+
 #### [v0.10.3](https://github.com/henriquehbr/eswatch/compare/v0.10.2...v0.10.3)
+
+> 25 November 2020
 
 - fix: properly pass "outdir" to rimraf [`817330d`](https://github.com/henriquehbr/eswatch/commit/817330d47701843c44e8925ef76fe406156734fc)
 
