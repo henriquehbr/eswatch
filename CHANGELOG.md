@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.3...HEAD)
+#### [v0.10.4](https://github.com/henriquehbr/eswatch/compare/v0.10.3...v0.10.4)
 
-- fix(postBuild): properly show successful build message [`90cdbbb`](https://github.com/henriquehbr/eswatch/commit/90cdbbbf9e4764200ce4abdedb297d80d10ff25e)
+- fix(postBuild): properly show successful build message [`80ecedb`](https://github.com/henriquehbr/eswatch/commit/80ecedb404feca52b0887d6267a9a14d1c204122)
 - chore: bump eswatch from 0.10.2 to 0.10.3 [`326c726`](https://github.com/henriquehbr/eswatch/commit/326c726abaf611e331e0c1059cded2c6dda0d2f0)
 
 #### [v0.10.3](https://github.com/henriquehbr/eswatch/compare/v0.10.2...v0.10.3)
