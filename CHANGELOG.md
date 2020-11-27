@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.0...HEAD)
+
+- chore: bump dependencies [`69a1168`](https://github.com/henriquehbr/eswatch/commit/69a1168432c3fb8811515488b6f3177499d8b2d1)
+
 #### [v0.11.0](https://github.com/henriquehbr/eswatch/compare/v0.10.4...v0.11.0)
+
+> 27 November 2020
 
 - feat: add --keepfiles flag [`bb7a64f`](https://github.com/henriquehbr/eswatch/commit/bb7a64f78115b468cc9ac7e7ed1898bf5d36fbc3)
 
