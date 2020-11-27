@@ -3,15 +3,18 @@ import rimraf from 'rimraf'
 import { postBuild } from '@eswatch/postBuild'
 import { getCLIOptions, getEsbuildConfig } from '@eswatch/helpers'
 
-const options = getCLIOptions()
-
 const initEsbuild = async () => {
+  const options = getCLIOptions()
+  // Change return value of getEsbuildConfig to local types
   const esbuildConfig = await getEsbuildConfig()
+  !options.keepfiles && rimraf.sync(esbuildConfig.outdir)
   const esbuildService = options.watch && (await esbuild.startService())
-  const build = esbuildService ? esbuildService.build : esbuild.build
-  // Replace non-null assertion for a better fix
-  return async () =>
-    await Promise.all([rimraf.sync(esbuildConfig.outdir!), build(esbuildConfig), postBuild()])
+  const buildOrWatch = (esbuildService ? esbuildService.build : esbuild.build).bind(
+    this,
+    esbuildConfig
+  )
+  const buildSteps: Promise<any>[] = [buildOrWatch(), postBuild()]
+  return async () => await Promise.all(buildSteps)
 }
 
 export { initEsbuild }

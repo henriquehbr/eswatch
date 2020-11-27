@@ -1,7 +1,7 @@
-import type { BuildOptions } from 'esbuild'
 import { getCLIOptions, parseOptions } from '@eswatch/helpers'
+import { ESBuildFlags } from '@eswatch/types'
 
-type GetEsbuildConfig = () => Promise<BuildOptions>
+type GetEsbuildConfig = () => Promise<ESBuildFlags>
 
 const getEsbuildConfig: GetEsbuildConfig = async () => {
   const options = getCLIOptions()

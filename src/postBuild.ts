@@ -1,7 +1,8 @@
 import type { ChildProcess } from 'child_process'
 import readline from 'readline'
 import { getCLIOptions, runCommand, parseOptions } from '@eswatch/helpers'
-import type { PostBuild } from '@eswatch/types'
+
+type PostBuild = () => Promise<void>
 
 let child: ChildProcess | undefined
 
@@ -11,12 +12,12 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-const postBuild: PostBuild = async () => {
-  const options = getCLIOptions()
-  const { entryPoints, outdir } = await parseOptions()
-  options.clear && console.clear()
-  child?.kill()
-  return new Promise(resolve => {
+const postBuild: PostBuild = () => {
+  return new Promise(async resolve => {
+    const options = getCLIOptions()
+    const { entryPoints, outdir } = await parseOptions()
+    options.clear && console.clear()
+    child?.kill()
     if (options.run) {
       rl.pause()
       child = runCommand(options)

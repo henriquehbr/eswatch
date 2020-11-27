@@ -16,6 +16,7 @@ eswatch options:
   --standalone  Include dependencies on bundle
   --clear       Clear screen on each reload
   --run         Execute the output script right after each build
+  --keepfiles   Don't delete files from the target output directory before build
   --version     Displays both eswatch and esbuild versions
 
 esbuild options:

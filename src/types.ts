@@ -1,7 +1,5 @@
 import type { ParsedArgs } from 'minimist'
 
-type PostBuild = () => Promise<void>
-
 type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
 
 interface ESWatchFlags {
@@ -11,6 +9,7 @@ interface ESWatchFlags {
   run?: boolean
   standalone?: boolean
   version?: boolean
+  keepfiles?: boolean
 }
 
 interface ESBuildFlags {
@@ -18,10 +17,10 @@ interface ESBuildFlags {
   external?: string[]
   platform?: 'browser' | 'node'
   format?: 'cjs' | 'esm' | 'iife'
-  splitting: boolean
+  splitting?: boolean
   outdir: string
   outext?: string
   minify?: boolean
 }
 
-export { PostBuild, CLIFlags, ESWatchFlags, ESBuildFlags }
+export { CLIFlags, ESWatchFlags, ESBuildFlags }

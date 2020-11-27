@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.4...HEAD)
+
+- feat: add --keepfiles flag [`5f29b90`](https://github.com/henriquehbr/eswatch/commit/5f29b90a3f08f133dd76feabca5d9dd0602b4387)
+
 #### [v0.10.4](https://github.com/henriquehbr/eswatch/compare/v0.10.3...v0.10.4)
+
+> 26 November 2020
 
 - fix(postBuild): properly show successful build message [`80ecedb`](https://github.com/henriquehbr/eswatch/commit/80ecedb404feca52b0887d6267a9a14d1c204122)
 - chore: bump eswatch from 0.10.2 to 0.10.3 [`326c726`](https://github.com/henriquehbr/eswatch/commit/326c726abaf611e331e0c1059cded2c6dda0d2f0)
