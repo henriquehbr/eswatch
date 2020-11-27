@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.10.4...HEAD)
+#### [v0.11.0](https://github.com/henriquehbr/eswatch/compare/v0.10.4...v0.11.0)
 
-- feat: add --keepfiles flag [`5f29b90`](https://github.com/henriquehbr/eswatch/commit/5f29b90a3f08f133dd76feabca5d9dd0602b4387)
+- feat: add --keepfiles flag [`bb7a64f`](https://github.com/henriquehbr/eswatch/commit/bb7a64f78115b468cc9ac7e7ed1898bf5d36fbc3)
 
 #### [v0.10.4](https://github.com/henriquehbr/eswatch/compare/v0.10.3...v0.10.4)
 
