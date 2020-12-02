@@ -45,7 +45,7 @@
     "@types/node": "^14.14.10",
     "@types/rimraf": "^3.0.0",
     "auto-changelog": "^2.2.1",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
     "eswatch": "^0.11.0",
     "husky": "^4.3.0",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "chokidar": "^3.4.3",
-    "esbuild": "^0.8.16",
+    "esbuild": "^0.8.17",
     "find-up": "^5.0.0",
     "is-glob": "^4.0.1",
     "minimist": "^1.2.5",

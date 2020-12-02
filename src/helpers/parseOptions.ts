@@ -5,7 +5,6 @@ import { getCLIOptions, validateEntryPoints } from '@eswatch/helpers'
 
 interface ParsedOptions {
   entryPoints: string[]
-  splitting: boolean
   outExtension: { '.js': string }
   outdir: string
   external: string[]
@@ -19,7 +18,6 @@ const dirname = path.dirname(fileURLToPath(import.meta.url))
 const parseOptions: ParseOptions = async () => {
   const options = getCLIOptions()
   const entryPoints = await validateEntryPoints(options)
-  const splitting = options.format === 'esm' ? options.splitting : false
   const outExtension = options.outext ? { '.js': options.outext } : { '.js': '.js' }
   // Look for a better-looking alternative for this
   const outdirPaths = [options.outdir || [dirname, 'build']].flat()
@@ -30,7 +28,7 @@ const parseOptions: ParseOptions = async () => {
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)
-  return { entryPoints, splitting, outExtension, outdir, external }
+  return { entryPoints, outExtension, outdir, external }
 }
 
 export default parseOptions

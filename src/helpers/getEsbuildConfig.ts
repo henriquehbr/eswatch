@@ -5,7 +5,7 @@ type GetEsbuildConfig = () => Promise<ESBuildFlags>
 
 const getEsbuildConfig: GetEsbuildConfig = async () => {
   const options = getCLIOptions()
-  const { entryPoints, external, outExtension, outdir, splitting } = await parseOptions()
+  const { entryPoints, external, outExtension, outdir } = await parseOptions()
   return {
     entryPoints,
     outdir,
@@ -15,7 +15,7 @@ const getEsbuildConfig: GetEsbuildConfig = async () => {
     incremental: options.incremental,
     minify: options.minify,
     platform: options.platform,
-    ...(options.bundle && { external, splitting })
+    ...(options.bundle && { external, splitting: options.splitting })
   }
 }
 
