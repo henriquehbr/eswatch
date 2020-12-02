@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.1...HEAD)
+
+- fix(runCommand): properly --run .mjs files [`67e67e6`](https://github.com/henriquehbr/eswatch/commit/67e67e669e491fe15607e76918690843ef80167f)
+
 #### [v0.11.1](https://github.com/henriquehbr/eswatch/compare/v0.11.0...v0.11.1)
+
+> 1 December 2020
 
 - refactor(parseOptions): remove --splitting validation [`cecb75d`](https://github.com/henriquehbr/eswatch/commit/cecb75de1720f47c0dcbda8894f27afe42fbb67f)
 - chore: bump dependencies [`1304a76`](https://github.com/henriquehbr/eswatch/commit/1304a76bf9b6c1ff8a71e37561b8d0a83a940574)
