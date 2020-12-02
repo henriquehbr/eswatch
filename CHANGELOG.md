@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.1...HEAD)
+#### [v0.11.2](https://github.com/henriquehbr/eswatch/compare/v0.11.1...v0.11.2)
 
-- fix(runCommand): properly --run .mjs files [`67e67e6`](https://github.com/henriquehbr/eswatch/commit/67e67e669e491fe15607e76918690843ef80167f)
+- fix(runCommand): properly --run .mjs files [`bb8ffa6`](https://github.com/henriquehbr/eswatch/commit/bb8ffa6db04edcab323eee732e2cdb1c13fcc8e7)
 
 #### [v0.11.1](https://github.com/henriquehbr/eswatch/compare/v0.11.0...v0.11.1)
 
