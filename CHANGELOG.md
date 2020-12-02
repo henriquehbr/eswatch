@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.0...HEAD)
+#### [v0.11.1](https://github.com/henriquehbr/eswatch/compare/v0.11.0...v0.11.1)
 
-- refactor(parseOptions): remove --splitting validation [`ea35cd6`](https://github.com/henriquehbr/eswatch/commit/ea35cd65ebdde0ce09e41363971861f12f8e9041)
+- refactor(parseOptions): remove --splitting validation [`cecb75d`](https://github.com/henriquehbr/eswatch/commit/cecb75de1720f47c0dcbda8894f27afe42fbb67f)
 - chore: bump dependencies [`1304a76`](https://github.com/henriquehbr/eswatch/commit/1304a76bf9b6c1ff8a71e37561b8d0a83a940574)
 
 #### [v0.11.0](https://github.com/henriquehbr/eswatch/compare/v0.10.4...v0.11.0)
