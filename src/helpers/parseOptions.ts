@@ -1,23 +1,20 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { builtinModules } from 'module'
-import { getCLIOptions, validateEntryPoints } from '@eswatch/helpers'
+import type { CLIFlags } from '@eswatch/types'
 
 interface ParsedOptions {
-  entryPoints: string[]
   outExtension: { '.js': string }
   outdir: string
   external: string[]
 }
 
-type ParseOptions = () => Promise<ParsedOptions>
+type ParseOptions = (options: CLIFlags) => Promise<ParsedOptions>
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // TODO: remove `options.entry` on 1.0
-const parseOptions: ParseOptions = async () => {
-  const options = getCLIOptions()
-  const entryPoints = await validateEntryPoints(options)
+const parseOptions: ParseOptions = async options => {
   const outExtension = options.outext ? { '.js': options.outext } : { '.js': '.js' }
   // Look for a better-looking alternative for this
   const outdirPaths = [options.outdir || [dirname, 'build']].flat()
@@ -28,7 +25,7 @@ const parseOptions: ParseOptions = async () => {
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)
-  return { entryPoints, outExtension, outdir, external }
+  return { outExtension, outdir, external }
 }
 
 export default parseOptions

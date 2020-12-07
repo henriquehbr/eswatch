@@ -1,15 +1,15 @@
-import { getCLIOptions, parseOptions } from '@eswatch/helpers'
-import { ESBuildFlags } from '@eswatch/types'
+import { parseOptions, validateEntryPoints } from '@eswatch/helpers'
+import type { CLIFlags, ESBuildFlags } from '@eswatch/types'
 
-type GetEsbuildConfig = () => Promise<ESBuildFlags>
+type GetEsbuildConfig = (entryPoints: string[], options: CLIFlags) => Promise<ESBuildFlags>
 
-const getEsbuildConfig: GetEsbuildConfig = async () => {
-  const options = getCLIOptions()
-  const { entryPoints, external, outExtension, outdir } = await parseOptions()
+const getEsbuildConfig: GetEsbuildConfig = async (entryPoints, options) => {
+  const validatedEntryPoints = await validateEntryPoints(entryPoints)
+  const { external, outExtension, outdir } = await parseOptions(options)
   return {
-    entryPoints,
     outdir,
     outExtension,
+    entryPoints: validatedEntryPoints,
     bundle: options.bundle,
     format: options.format,
     incremental: options.incremental,

@@ -1,6 +1,4 @@
-import type { ParsedArgs } from 'minimist'
-
-type CLIFlags = ESWatchFlags & ESBuildFlags & ParsedArgs
+type CLIFlags = ESWatchFlags & ESBuildFlags
 
 interface ESWatchFlags {
   watch: string | readonly string[]
@@ -15,12 +13,13 @@ interface ESWatchFlags {
 interface ESBuildFlags {
   bundle?: boolean
   external?: string[]
+  incremental?: boolean
   platform?: 'browser' | 'node'
   format?: 'cjs' | 'esm' | 'iife'
-  splitting?: boolean
+  minify?: boolean
   outdir: string
   outext?: string
-  minify?: boolean
+  splitting?: boolean
 }
 
-export { CLIFlags, ESWatchFlags, ESBuildFlags }
+export { CLIFlags, ESWatchFlags, ESBuildFlags, EntryPoints }

@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { initEsbuild } from '@eswatch/initEsbuild'
 import { getCLIOptions } from '@eswatch/helpers'
 

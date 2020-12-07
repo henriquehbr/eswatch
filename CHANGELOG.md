@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.3...HEAD)
+
+- refactor: implement bare-bones cacjs structure [`fd5feb3`](https://github.com/henriquehbr/eswatch/commit/fd5feb36e841d3c9729ade69d74d34e8e149150f)
+
 #### [v0.11.3](https://github.com/henriquehbr/eswatch/compare/v0.11.2...v0.11.3)
+
+> 7 December 2020
 
 - fix: properly --run non-index entry points [`3d94bcb`](https://github.com/henriquehbr/eswatch/commit/3d94bcb8a4f153e77fdd017010ffe827276a9e5d)
 - chore: bump eswatch from 0.8.19 to 0.8.20 [`40b7cb4`](https://github.com/henriquehbr/eswatch/commit/40b7cb406c0e167114987f8a63b7bc346f5df5f5)

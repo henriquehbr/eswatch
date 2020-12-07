@@ -1,14 +1,14 @@
 {
   "name": "eswatch",
   "version": "0.11.3",
-  "main": "lib/index.js",
+  "main": "lib/cli.js",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
   "type": "module",
   "files": [
     "lib"
   ],
-  "bin": "./lib/index.js",
+  "bin": "./lib/cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/henriquehbr/eswatch"
@@ -25,9 +25,9 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "yarn build && git add lib/. CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
+    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/cli.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
     "prebuild": "rimraf lib",
-    "build": "eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
+    "build": "eswatch --bundle --format esm --splitting --outdir ./lib ./src/cli.ts",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
   "husky": {
@@ -47,17 +47,19 @@
     "auto-changelog": "^2.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.15.0",
-    "eswatch": "^0.11.2",
-    "husky": "^4.3.4",
+    "eswatch": "^0.11.3",
+    "husky": "^4.3.5",
     "inquirer": "^7.3.3",
     "typescript": "^4.1.2"
   },
   "dependencies": {
+    "cac": "^6.6.1",
     "chokidar": "^3.4.3",
     "esbuild": "^0.8.20",
     "find-up": "^5.0.0",
     "is-glob": "^4.0.1",
     "minimist": "^1.2.5",
+    "oneline": "^1.0.3",
     "rimraf": "^3.0.2",
     "tiny-glob": "^0.2.8"
   }

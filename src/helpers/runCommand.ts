@@ -1,6 +1,8 @@
 import path from 'path'
-import { spawn } from 'child_process'
-import { getCLIOptions, parseOptions } from '@eswatch/helpers'
+import { ChildProcess, spawn } from 'child_process'
+import { getCLIOptions } from '@eswatch/helpers'
+
+type RunCommand = (entryPoints: string[]) => ChildProcess
 
 const options = getCLIOptions()
 
@@ -32,9 +34,9 @@ const getCommandToBeRan = (entryPoints: string[]) => {
   }
 }
 
-const runCommand = async () => {
-  const { entryPoints } = await parseOptions()
+const runCommand: RunCommand = entryPoints => {
   const commandToRun = getCommandToBeRan(entryPoints)
+  console.log(commandToRun)
   const [commandName] = commandToRun.split(' ')
   const commandParameters = commandToRun.split(' ').slice(1)
   // Consider replacing this `spawn` with a `fork` when --run is not string

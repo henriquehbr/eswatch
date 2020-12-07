@@ -22,7 +22,7 @@ eswatch options:
 esbuild options:
   --bundle      Bundle all dependencies into the output files
   --platform    Platform target (browser | node, default browser)
-  --minify      Remove whitespace, shorten indentifiers and syntax
+  --minify      Remove whitespace, shorten identifiers and syntax
   --external    Exclude specific modules from the bundle
   --format      Output format (iife | cjs | esm, no default when not
                 bundling, otherwise default is iife when platform
