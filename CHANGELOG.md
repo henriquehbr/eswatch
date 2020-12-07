@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.2...HEAD)
+
+- fix: properly --run non-index entry points [`ff10b21`](https://github.com/henriquehbr/eswatch/commit/ff10b2115b6e74b659f4af77738e49984d8e89da)
+
 #### [v0.11.2](https://github.com/henriquehbr/eswatch/compare/v0.11.1...v0.11.2)
+
+> 1 December 2020
 
 - fix(runCommand): properly --run .mjs files [`bb8ffa6`](https://github.com/henriquehbr/eswatch/commit/bb8ffa6db04edcab323eee732e2cdb1c13fcc8e7)
 

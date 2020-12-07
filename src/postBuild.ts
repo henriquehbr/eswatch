@@ -20,7 +20,7 @@ const postBuild: PostBuild = () => {
     child?.kill()
     if (options.run) {
       rl.pause()
-      child = runCommand(options)
+      child = await runCommand()
       child.on('close', () => {
         rl.resume()
         options.watch ? resolve() : process.exit()

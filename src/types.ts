@@ -6,7 +6,7 @@ interface ESWatchFlags {
   watch: string | readonly string[]
   clear?: boolean
   entry: string
-  run?: boolean
+  run: boolean | string
   standalone?: boolean
   version?: boolean
   keepfiles?: boolean

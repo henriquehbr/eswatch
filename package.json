@@ -25,7 +25,7 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "yarn build && git add lib/. CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --minify --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/index.ts\"",
+    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/index.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
     "prebuild": "rimraf lib",
     "build": "eswatch --minify --bundle --format esm --splitting --outdir ./lib ./src/index.ts",
     "lint": "eslint --fix \"src/**/*.ts\""
@@ -38,7 +38,7 @@
     }
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.5",
+    "@types/eslint": "^7.2.6",
     "@types/inquirer": "^7.3.1",
     "@types/is-glob": "^4.0.1",
     "@types/minimist": "^1.2.1",
@@ -46,15 +46,15 @@
     "@types/rimraf": "^3.0.0",
     "auto-changelog": "^2.2.1",
     "cross-env": "^7.0.3",
-    "eslint": "^7.14.0",
-    "eswatch": "^0.11.0",
-    "husky": "^4.3.0",
+    "eslint": "^7.15.0",
+    "eswatch": "^0.11.2",
+    "husky": "^4.3.4",
     "inquirer": "^7.3.3",
     "typescript": "^4.1.2"
   },
   "dependencies": {
     "chokidar": "^3.4.3",
-    "esbuild": "^0.8.17",
+    "esbuild": "^0.8.19",
     "find-up": "^5.0.0",
     "is-glob": "^4.0.1",
     "minimist": "^1.2.5",

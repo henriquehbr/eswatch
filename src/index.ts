@@ -12,9 +12,9 @@ const main = async () => {
   options.watch
     ? (await import('chokidar'))
         .watch(options.watch)
-        .on('ready', buildSteps)
-        .on('change', buildSteps)
-    : buildSteps
+        .on('ready', async () => await buildSteps())
+        .on('change', async () => await buildSteps())
+    : await buildSteps()
 }
 
 main()
