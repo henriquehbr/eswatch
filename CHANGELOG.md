@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.2...HEAD)
+#### [v0.11.3](https://github.com/henriquehbr/eswatch/compare/v0.11.2...v0.11.3)
 
 - fix: properly --run non-index entry points [`3d94bcb`](https://github.com/henriquehbr/eswatch/commit/3d94bcb8a4f153e77fdd017010ffe827276a9e5d)
-- chore: bump eswatch from 0.8.19 to 0.8.20 [`105431b`](https://github.com/henriquehbr/eswatch/commit/105431b411c6f1ee718a41bb8ec13b96aea683bc)
+- chore: bump eswatch from 0.8.19 to 0.8.20 [`40b7cb4`](https://github.com/henriquehbr/eswatch/commit/40b7cb406c0e167114987f8a63b7bc346f5df5f5)
 
 #### [v0.11.2](https://github.com/henriquehbr/eswatch/compare/v0.11.1...v0.11.2)
 
