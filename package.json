@@ -25,7 +25,7 @@
     "changelog": "auto-changelog -l false --hide-credit",
     "postchangelog": "yarn build && git add lib/. CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/cli.ts --run \"node lib --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
+    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/cli.ts --run \"node lib/cli --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
     "prebuild": "rimraf lib",
     "build": "eswatch --bundle --format esm --splitting --outdir ./lib ./src/cli.ts",
     "lint": "eslint --fix \"src/**/*.ts\""

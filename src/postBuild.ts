@@ -15,12 +15,11 @@ const rl = readline.createInterface({
 
 const postBuild: PostBuild = (entryPoints, options) => {
   return new Promise(async resolve => {
-    //const options = getCLIOptions()
     options.clear && console.clear()
     child?.kill()
     if (options.run) {
       rl.pause()
-      child = runCommand(entryPoints)
+      child = runCommand(entryPoints, options)
       child.on('close', () => {
         rl.resume()
         options.watch ? resolve() : process.exit()

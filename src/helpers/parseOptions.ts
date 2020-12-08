@@ -13,7 +13,6 @@ type ParseOptions = (options: CLIFlags) => Promise<ParsedOptions>
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// TODO: remove `options.entry` on 1.0
 const parseOptions: ParseOptions = async options => {
   const outExtension = options.outext ? { '.js': options.outext } : { '.js': '.js' }
   // Look for a better-looking alternative for this

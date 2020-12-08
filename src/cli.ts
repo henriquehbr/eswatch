@@ -5,7 +5,6 @@ import { version } from '../package.json'
 
 const cli = cac('eswatch')
 
-// Consider replacing `--watch` flag with command `watch` subcommand
 cli
   .command('<...entry-points>', 'Build files with esbuild')
   .action(async (entryPoints, options) => {

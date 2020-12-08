@@ -8,8 +8,6 @@ const executeBuildSteps = async (buildSteps: any[]) => {
   for (const buildStep of buildSteps) await buildStep()
 }
 
-console.log('Hello World!')
-
 const initEsbuild = async (entryPoints: EntryPoints, options: CLIFlags) => {
   const esbuildConfig = await getEsbuildConfig(entryPoints, options)
   !options.keepfiles && rimraf.sync(esbuildConfig.outdir)

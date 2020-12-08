@@ -1,4 +1,3 @@
-export { default as getCLIOptions } from './getOptions'
 export { default as fileExists } from './fileExists'
 export { default as runCommand } from './runCommand'
 export { default as globParser } from './globParser'
