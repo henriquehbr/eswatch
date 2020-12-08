@@ -12,7 +12,6 @@ cli
     await initEsbuild(entryPoints, options)
   })
 
-//cli.option('--entry <entry>', 'Entry point for the build')
 cli.option('--watch <...files>', 'Directory/files to watch (supports glob patterns)')
 cli.option('--standalone', 'Include dependencies on bundle')
 cli.option('--clear', 'Clear screen on each reload')
