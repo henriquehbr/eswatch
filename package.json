@@ -23,16 +23,17 @@
     "version": "yarn changelog -p",
     "postversion": "yes \"\" | yarn publish",
     "changelog": "auto-changelog -l false --hide-credit",
-    "postchangelog": "yarn build && git add lib/. CHANGELOG.md",
+    "postchangelog": "yarn build:lib && git add lib/. CHANGELOG.md",
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-    "dev": "eswatch --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* ./src/cli.ts --run \"node lib/cli --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/* ./example/cli.ts\"",
+    "dev": "eswatch ./src/cli.ts --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* --run \"node lib/cli ./example/cli.ts --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/*\"",
     "prebuild": "rimraf lib",
-    "build": "eswatch --bundle --format esm --splitting --outdir ./lib ./src/cli.ts",
+    "build:lib": "eswatch ./src/cli.ts --bundle --format esm --splitting --outdir ./lib",
+    "build:example": "node lib/cli ./example/cli.ts --bundle --format esm --splitting --outdir ./lib/example-build",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && git add lib/.",
+      "pre-commit": "yarn build:lib && git add lib/.",
       "post-commit": "yarn changelog -u && yarn amend-changelog",
       "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
     }

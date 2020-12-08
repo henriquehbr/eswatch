@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file. Dates are d
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v0.11.3...HEAD)
 
 - refactor: implement bare-bones cacjs structure [`ba6a8da`](https://github.com/henriquehbr/eswatch/commit/ba6a8da68712e3acc6a6e5156435e572c37a34ba)
-- refactor: remove unused modules [`53e8057`](https://github.com/henriquehbr/eswatch/commit/53e8057e3258dfce2bd03ffe408e61efa1478e78)
+- refactor: remove unused modules [`897f800`](https://github.com/henriquehbr/eswatch/commit/897f800d6d4ba770fd8b6419084284ec81b0e8ec)
+- chore: add script to build example directory [`207f0f5`](https://github.com/henriquehbr/eswatch/commit/207f0f53db98af88b494fd9b4d6727b31ef4edff)
 
 #### [v0.11.3](https://github.com/henriquehbr/eswatch/compare/v0.11.2...v0.11.3)
 
