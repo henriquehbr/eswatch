@@ -27,7 +27,7 @@
     "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
     "dev": "eswatch ./src/cli.ts --bundle --format esm --splitting --outdir ./lib --watch ./src/**/* --run \"node lib/cli ./example/cli.ts --bundle --format esm --splitting --outdir ./lib/example-build --run --watch ./example/**/*\"",
     "prebuild": "rimraf lib",
-    "build:lib": "eswatch ./src/cli.ts --bundle --format esm --splitting --outdir ./lib",
+    "build:lib": "eswatch ./src/cli.ts --minify --bundle --format esm --splitting --outdir ./lib",
     "build:example": "node lib/cli ./example/cli.ts --bundle --format esm --splitting --outdir ./lib/example-build",
     "lint": "eslint --fix \"src/**/*.ts\""
   },
