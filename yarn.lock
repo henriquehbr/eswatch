@@ -93,10 +93,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.6.tgz#146d3da57b3c636cc0d1769396ce1cfa8991147f"
   integrity sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
 
-"@types/node@^14.14.10":
-  version "14.14.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
-  integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
+"@types/node@^14.14.12":
+  version "14.14.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.12.tgz#0b1d86f8c40141091285dea02e4940df73bba43f"
+  integrity sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -231,10 +231,10 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-cac@^6.6.1:
-  version "6.6.1"
-  resolved "https://registry.yarnpkg.com/cac/-/cac-6.6.1.tgz#3dde3f6943f45d42a56729ea3573c08b3e7b6a6d"
-  integrity sha512-uhki4T3Ax68hw7Dufi0bATVAF8ayBSwOKUEJHjObPrUN4tlQ8Lf7oljpTje/mArLxYN0D743c2zJt4C1bVTCqg==
+cac@^6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.1.tgz#0609d28a31d887746de4b66a15e3914f106f880c"
+  integrity sha512-LfGt47+ugCY65W4yUEyxnZKd/tJSBJD/gUAxQGiQjH7yqdhbaX2XN0Rli4+0W0DJiDONmYeh0TlJxMtXGZspIg==
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -408,6 +408,11 @@ esbuild@^0.8.20:
   version "0.8.20"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.20.tgz#e56b594c3bfc1b87f9299b4a43eead3e0a10f49c"
   integrity sha512-xXNLXa2SraaAoeTybOMAvOf6KW/DthI3ATXMG+W3yMav1iFpEGvo4XS22AzCPE3rTXbK/7TykxpwI8mD6lYUOg==
+
+esbuild@^0.8.21:
+  version "0.8.21"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.21.tgz#c431f8af457795c2fecb1b2873cb8eaef4e5b53c"
+  integrity sha512-vRRx5MZmiekw2R7jK5BppvBUFCJA0Zkl0wYxrDmyUvMPBcQC/xJvxJUM4R+Hgjgb3gp5P1W655AsuoqDeQQDVw==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -1305,10 +1310,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typescript@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.2.tgz#6369ef22516fe5e10304aae5a5c4862db55380e9"
-  integrity sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
+typescript@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
+  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
 
 uglify-js@^3.1.4:
   version "3.11.4"

@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.1...HEAD)
+
+- chore: bump dependencies [`619bea4`](https://github.com/henriquehbr/eswatch/commit/619bea4cdeba6656a25495734713319d8c96d3ac)
+
 #### [v1.0.0-alpha.1](https://github.com/henriquehbr/eswatch/compare/v0.11.3...v1.0.0-alpha.1)
+
+> 11 December 2020
 
 - refactor: implement bare-bones cacjs structure [`ba6a8da`](https://github.com/henriquehbr/eswatch/commit/ba6a8da68712e3acc6a6e5156435e572c37a34ba)
 - chore: re-add --minify flag to "build:lib" script [`ea056d7`](https://github.com/henriquehbr/eswatch/commit/ea056d74b53c4acda2fff928bbe701c5fb45f1ac)
