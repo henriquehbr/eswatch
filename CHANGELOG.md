@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file. Dates are d
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.1...HEAD)
 
 - chore: bump dependencies [`893df91`](https://github.com/henriquehbr/eswatch/commit/893df91b66cf5d1375f972da6eb4fa9ec3a347e8)
-- refactor: replace default with named exports [`f290c0c`](https://github.com/henriquehbr/eswatch/commit/f290c0c98bf79808eabed88bd8e6bc76709078f2)
+- refactor: replace default with named exports [`278a853`](https://github.com/henriquehbr/eswatch/commit/278a8530e551a6eb9171ce2958d7324383d15764)
+- refactor: remove barrel files and imports [`dbc5e7d`](https://github.com/henriquehbr/eswatch/commit/dbc5e7dcd131560a2d0d4e3ca0bd34e37951924f)
 
 #### [v1.0.0-alpha.1](https://github.com/henriquehbr/eswatch/compare/v0.11.3...v1.0.0-alpha.1)
 

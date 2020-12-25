@@ -1,5 +1,6 @@
 import isGlob from 'is-glob'
-import { globParser, fileExists } from '@eswatch/helpers'
+import { globParser } from './globParser'
+import { fileExists } from './fileExists'
 
 type ValidateEntryPoints = (entryPoints: string[]) => Promise<string[] | unknown>
 

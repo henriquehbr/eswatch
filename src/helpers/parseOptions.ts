@@ -20,7 +20,7 @@ const parseOptions: ParseOptions = async options => {
   const outdir = path.resolve(...outdirPaths)
   const external = [...builtinModules]
   if (!options.standalone) {
-    const { getDependencies } = await import('@eswatch/helpers')
+    const { getDependencies } = await import('@eswatch/helpers/getDependencies')
     external.push(...(await getDependencies()))
   }
   options.external && external.push(...options.external)

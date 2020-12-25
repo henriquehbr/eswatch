@@ -1,4 +1,5 @@
-import { parseOptions, validateEntryPoints } from '@eswatch/helpers'
+import { parseOptions } from './parseOptions'
+import { validateEntryPoints } from './validateEntryPoints'
 import type { CLIFlags, ESBuildFlags } from '@eswatch/types'
 
 type GetEsbuildConfig = (entryPoints: string[], options: CLIFlags) => Promise<ESBuildFlags>

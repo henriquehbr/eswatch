@@ -1,6 +1,6 @@
 import type { ChildProcess } from 'child_process'
 import readline from 'readline'
-import { runCommand } from '@eswatch/helpers'
+import { runCommand } from '@eswatch/helpers/runCommand'
 import type { CLIFlags } from '@eswatch/types'
 
 type PostBuild = (entryPoints: string[], options: CLIFlags) => Promise<void>

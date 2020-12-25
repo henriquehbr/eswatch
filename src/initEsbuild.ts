@@ -2,7 +2,7 @@ import esbuild from 'esbuild'
 import rimraf from 'rimraf'
 import { postBuild } from '@eswatch/postBuild'
 import type { CLIFlags, EntryPoints } from '@eswatch/types'
-import { getEsbuildConfig } from '@eswatch/helpers'
+import { getEsbuildConfig } from '@eswatch/helpers/getEsbuildConfig'
 
 const executeBuildSteps = async (buildSteps: any[]) => {
   for (const buildStep of buildSteps) await buildStep()
