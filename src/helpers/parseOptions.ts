@@ -27,4 +27,4 @@ const parseOptions: ParseOptions = async options => {
   return { outExtension, outdir, external }
 }
 
-export default parseOptions
+export { parseOptions }

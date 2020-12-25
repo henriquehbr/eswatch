@@ -41,4 +41,4 @@ const runCommand: RunCommand = (entryPoints, options) => {
   return childProcess
 }
 
-export default runCommand
+export { runCommand }

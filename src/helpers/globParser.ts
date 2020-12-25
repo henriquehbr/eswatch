@@ -10,4 +10,4 @@ const globParser = async (globPattern: string) => {
   return forwardSlashedGlobFiles
 }
 
-export default globParser
+export { globParser }

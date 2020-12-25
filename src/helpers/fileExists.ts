@@ -12,4 +12,4 @@ const fileExists: FileExists = async path => {
   }
 }
 
-export default fileExists
+export { fileExists }

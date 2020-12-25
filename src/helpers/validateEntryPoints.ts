@@ -13,4 +13,4 @@ const validateEntryPoints: ValidateEntryPoints = async entryPoints => {
   return flattenedEntryPoints
 }
 
-export default validateEntryPoints
+export { validateEntryPoints }
