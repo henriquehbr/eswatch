@@ -4,7 +4,7 @@ import { postBuild } from '@eswatch/postBuild'
 import type { CLIFlags } from '@eswatch/types'
 import { getEsbuildConfig } from '@eswatch/helpers/getEsbuildConfig'
 
-const executeBuildSteps = async (buildSteps: any[]) => {
+const executeBuildSteps = async (buildSteps: Array<() => Promise<any>>) => {
   for (const buildStep of buildSteps) await buildStep()
 }
 

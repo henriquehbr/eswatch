@@ -1,7 +1,7 @@
 {
   "name": "eswatch",
   "version": "1.0.0-alpha.2",
-  "main": "lib/cli.js",
+  "main": "lib/initEsbuild.js",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
   "type": "module",
