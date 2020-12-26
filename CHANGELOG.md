@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.2...HEAD)
+
+- docs: add section with contribution steps [`b6f0efd`](https://github.com/henriquehbr/eswatch/commit/b6f0efd0fc7b978da7a24a971712d5c8ea57e841)
+
 #### [v1.0.0-alpha.2](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.1...v1.0.0-alpha.2)
+
+> 26 December 2020
 
 - chore: bump dependencies [`893df91`](https://github.com/henriquehbr/eswatch/commit/893df91b66cf5d1375f972da6eb4fa9ec3a347e8)
 - fix: verify dependencies before including on externals [`de932ee`](https://github.com/henriquehbr/eswatch/commit/de932ee27ba0a1d18e424d2302627fd855624749)
