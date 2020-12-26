@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 
-(async () => {
+const main = async () => {
   const { message } = await import('./message')
   message()
   inquirer
@@ -14,4 +14,6 @@ import inquirer from 'inquirer'
     .then(async answers => {
       console.log(`Hello ${answers.username}!`)
     })
-})()
+}
+
+main()

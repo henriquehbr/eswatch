@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Henrique Borges",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ../lib/cli ./src/cli.ts --bundle --format esm --splitting --outdir ../lib/example-build"
+  }
+}
