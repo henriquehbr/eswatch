@@ -2,10 +2,10 @@ import { parseOptions } from './parseOptions'
 import { validateEntryPoints } from './validateEntryPoints'
 import type { CLIFlags, ESBuildFlags } from '@eswatch/types'
 
-type GetEsbuildConfig = (entryPoints: string[], options: CLIFlags) => Promise<ESBuildFlags>
+type GetEsbuildConfig = (options: CLIFlags) => Promise<ESBuildFlags>
 
-const getEsbuildConfig: GetEsbuildConfig = async (entryPoints, options) => {
-  const validatedEntryPoints = await validateEntryPoints(entryPoints)
+const getEsbuildConfig: GetEsbuildConfig = async options => {
+  const validatedEntryPoints = await validateEntryPoints(options.entryPoints)
   const { external, outExtension, outdir } = await parseOptions(options)
   return {
     outdir,

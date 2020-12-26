@@ -3,7 +3,7 @@ type CLIFlags = ESWatchFlags & ESBuildFlags
 interface ESWatchFlags {
   watch: string | readonly string[]
   clear?: boolean
-  entry: string
+  entryPoints: string[]
   run: boolean | string
   standalone?: boolean
   version?: boolean
@@ -22,4 +22,4 @@ interface ESBuildFlags {
   splitting?: boolean
 }
 
-export { CLIFlags, ESWatchFlags, ESBuildFlags, EntryPoints }
+export { CLIFlags, ESWatchFlags, ESBuildFlags }

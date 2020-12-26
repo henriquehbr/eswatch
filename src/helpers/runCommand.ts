@@ -2,7 +2,7 @@ import path from 'path'
 import { ChildProcess, spawn } from 'child_process'
 import type { CLIFlags } from '@eswatch/types'
 
-type RunCommand = (entryPoints: string[], options: CLIFlags) => ChildProcess
+type RunCommand = (options: CLIFlags) => ChildProcess
 
 const isIndexFile = (file: string) => {
   const filename = path.parse(file).name
@@ -17,23 +17,23 @@ const getScriptWithExtension = (file: string, options: CLIFlags) => {
   return filePath
 }
 
-const getScriptToBeRan = (entryPoints: string[], options: CLIFlags): any => {
-  const indexFile = entryPoints.find(isIndexFile)
-  const scriptToBeRan = !indexFile ? entryPoints[0] : indexFile
+const getScriptToBeRan = (options: CLIFlags): any => {
+  const indexFile = options.entryPoints.find(isIndexFile)
+  const scriptToBeRan = !indexFile ? options.entryPoints[0] : indexFile
   return getScriptWithExtension(scriptToBeRan, options)
 }
 
-const getCommandToBeRan = (entryPoints: string[], options: CLIFlags) => {
+const getCommandToBeRan = (options: CLIFlags) => {
   if (typeof options.run === 'string') {
     return options.run
   } else {
-    const scriptToRun = getScriptToBeRan(entryPoints, options)
+    const scriptToRun = getScriptToBeRan(options)
     return 'node ' + scriptToRun
   }
 }
 
-const runCommand: RunCommand = (entryPoints, options) => {
-  const commandToRun = getCommandToBeRan(entryPoints, options)
+const runCommand: RunCommand = options => {
+  const commandToRun = getCommandToBeRan(options)
   const [commandName] = commandToRun.split(' ')
   const commandParameters = commandToRun.split(' ').slice(1)
   // Consider replacing this `spawn` with a `fork` when --run is not string

@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 #### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.2...HEAD)
 
-- docs: add section with contribution steps [`b6f0efd`](https://github.com/henriquehbr/eswatch/commit/b6f0efd0fc7b978da7a24a971712d5c8ea57e841)
+- refactor: merge "entryPoints" into "options" parameter [`f36292b`](https://github.com/henriquehbr/eswatch/commit/f36292be091c3375800fabbcbce65d8f85ebaa55)
+- docs: add section with contribution steps [`3aa7d44`](https://github.com/henriquehbr/eswatch/commit/3aa7d44d6280e54c5d0e92e9fb6a0351be4ff35d)
 
 #### [v1.0.0-alpha.2](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.1...v1.0.0-alpha.2)
 

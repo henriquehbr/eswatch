@@ -9,7 +9,7 @@ cli
   .command('<...entry-points>', 'Build files with esbuild')
   .action(async (entryPoints, options) => {
     const { initEsbuild } = await import('./initEsbuild')
-    await initEsbuild(entryPoints, options)
+    await initEsbuild({ entryPoints, ...options })
   })
 
 cli.option('--watch <...files>', 'Directory/files to watch (supports glob patterns)')

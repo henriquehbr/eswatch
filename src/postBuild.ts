@@ -3,7 +3,7 @@ import readline from 'readline'
 import { runCommand } from '@eswatch/helpers/runCommand'
 import type { CLIFlags } from '@eswatch/types'
 
-type PostBuild = (entryPoints: string[], options: CLIFlags) => Promise<void>
+type PostBuild = (options: CLIFlags) => Promise<void>
 
 let child: ChildProcess | undefined
 
@@ -13,19 +13,19 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-const postBuild: PostBuild = (entryPoints, options) => {
+const postBuild: PostBuild = options => {
   return new Promise(async resolve => {
     options.clear && console.clear()
     child?.kill()
     if (options.run) {
       rl.pause()
-      child = runCommand(entryPoints, options)
+      child = runCommand(options)
       child.on('close', () => {
         rl.resume()
         options.watch ? resolve() : process.exit()
       })
     } else {
-      console.log(`${entryPoints.join(', ')} built successfully on ${options.outdir}`)
+      console.log(`${options.entryPoints.join(', ')} built successfully on ${options.outdir}`)
       rl.close()
       resolve()
     }
