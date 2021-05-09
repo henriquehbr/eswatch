@@ -2,13 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### [Unreleased](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.2...HEAD)
+#### [v1.0.0](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.2...v1.0.0)
 
-- chore: bump dependencies [`15014a4`](https://github.com/henriquehbr/eswatch/commit/15014a49f3b3e7a477d4288d9335bf0cb7813f54)
+- chore: bump dependencies [`338a5e6`](https://github.com/henriquehbr/eswatch/commit/338a5e611fc911719a3f6daa0f801533621a1ba8)
 - refactor(runCommand): modularize helper functions [`19812e8`](https://github.com/henriquehbr/eswatch/commit/19812e83d7299c00c8b3ac005187ca9a53529fd5)
 - refactor: merge "entryPoints" into "options" parameter [`c47273c`](https://github.com/henriquehbr/eswatch/commit/c47273c928ae7b702007d8fb80ba04cde66f9a67)
 - docs: add section with contribution steps [`3aa7d44`](https://github.com/henriquehbr/eswatch/commit/3aa7d44d6280e54c5d0e92e9fb6a0351be4ff35d)
 - chore: set initEsbuild as package.json main field [`8adde61`](https://github.com/henriquehbr/eswatch/commit/8adde614298eb397131c3db57ae4f55505507e79)
+- docs: add disclaimer about project status [`a89fc28`](https://github.com/henriquehbr/eswatch/commit/a89fc2850ff830daf13abff05746efe47a31c904)
 
 #### [v1.0.0-alpha.2](https://github.com/henriquehbr/eswatch/compare/v1.0.0-alpha.1...v1.0.0-alpha.2)
 
