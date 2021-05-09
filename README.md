@@ -2,7 +2,7 @@
 
 A watcher utility for esbuild
 
-> This project is in early development stage, it's not advised to use it in production, at the moment, it's only a proof-of-concept
+> **Disclaimer:** this project is not being actively maintained anymore, for similar tools consider checking out [`estrella`](https://github.com/rsms/estrella) or even esbuild watch mode [thread](https://github.com/evanw/esbuild/issues/21) for more information or possible alternatives
 
 ## Command-line usage
 
